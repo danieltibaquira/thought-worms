@@ -16,8 +16,10 @@ const selected = idsArg === 'all-verified'
   : candidates.filter((row) => requestedIds.includes(row.id));
 
 if (!selected.length) {
-  console.error('No candidates selected for promotion.');
-  process.exit(1);
+  writeJson('data/artifacts.promoted.json', []);
+  execFileSync('node', ['scripts/build-live-corpus.mjs'], { stdio: 'inherit' });
+  console.log('No verified candidates to promote. Live corpus rebuilt from verified artifacts.');
+  process.exit(0);
 }
 
 for (const row of selected) {
