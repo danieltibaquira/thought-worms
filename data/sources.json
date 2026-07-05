@@ -1,5 +1,25 @@
 [
   {
+    "id": "legacy-curated",
+    "category": "Prayers",
+    "title": "Legacy curated seed corpus",
+    "language": "mixed",
+    "url": "https://github.com/danieltibaquira/thought-worms",
+    "license": "mixed-reference",
+    "priority": "medium",
+    "harvester": "manual"
+  },
+  {
+    "id": "haiku-foundation",
+    "category": "Haiku",
+    "title": "Haiku Foundation Resources",
+    "language": "Japanese",
+    "url": "https://thehaikufoundation.org/",
+    "license": "reference",
+    "priority": "medium",
+    "harvester": "manual"
+  },
+  {
     "id": "mumonkan-sacred-texts",
     "category": "Koan",
     "title": "The Gateless Gate",
@@ -40,11 +60,51 @@
     "harvester": "manual"
   },
   {
-    "id": "haiku-foundation",
-    "category": "Haiku",
-    "title": "Haiku Foundation Resources",
-    "language": "Japanese",
-    "url": "https://thehaikufoundation.org/",
+    "id": "oup-aztec-poets",
+    "category": "Cantos",
+    "title": "Fifteen Poets of the Aztec World",
+    "language": "Nahuatl / Spanish / English",
+    "url": "https://www.oupress.com/9780806132914/fifteen-poets-of-the-aztec-world/",
+    "license": "bibliographic-reference",
+    "priority": "high",
+    "harvester": "manual"
+  },
+  {
+    "id": "sanskrit-docs-rigveda",
+    "category": "Hymns",
+    "title": "Rigveda",
+    "language": "Sanskrit",
+    "url": "https://sanskritdocuments.org/doc_veda/rigveda.html",
+    "license": "reference",
+    "priority": "high",
+    "harvester": "manual"
+  },
+  {
+    "id": "sacred-texts-upanishads",
+    "category": "Mahāvākyas",
+    "title": "The Upanishads",
+    "language": "Sanskrit",
+    "url": "https://sacred-texts.com/hin/sbe15/",
+    "license": "public-domain-reference",
+    "priority": "high",
+    "harvester": "manual"
+  },
+  {
+    "id": "poetryfoundation-rumi",
+    "category": "Sufi Poetry",
+    "title": "Rumi",
+    "language": "Persian",
+    "url": "https://www.poetryfoundation.org/poets/jalal-al-din-rumi",
+    "license": "reference",
+    "priority": "medium",
+    "harvester": "manual"
+  },
+  {
+    "id": "poetryfoundation-hafez",
+    "category": "Sufi Poetry",
+    "title": "Hafez",
+    "language": "Persian",
+    "url": "https://www.poetryfoundation.org/poets/hafez",
     "license": "reference",
     "priority": "medium",
     "harvester": "manual"
