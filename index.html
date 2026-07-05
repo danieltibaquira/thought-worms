@@ -22,10 +22,16 @@
 <section class="texts"><div class="block"><p class="label">English</p><p class="text" id="english"></p></div><div class="block"><p class="label">Spanish</p><p class="text" id="spanish"></p></div></section>
 <footer><a id="source" href="#" target="_blank" rel="noreferrer">Source</a><button id="again" type="button">Another worm</button></footer>
 </article></main>
-<script src="./thought-worms.js?v=20260705b"></script>
+<script src="./thought-worms.js?v=20260705c"></script>
 <script>
 const worms=Array.isArray(window.THOUGHT_WORMS)?window.THOUGHT_WORMS:[];
-function pick(){if(!worms.length)return;const w=worms[Math.floor(Math.random()*worms.length)];document.title=w.category+' — Thought Worms';document.getElementById('category').textContent=w.category||'';document.getElementById('artifact').textContent=w.artifact||'';document.getElementById('english').textContent=w.english||'';document.getElementById('spanish').textContent=w.spanish||'';const original=document.getElementById('original');const o=(w.original||'').trim();const a=(w.artifact||'').trim();const hideOriginal=!o||o===a||o.endsWith(': non-text artifact');original.hidden=hideOriginal;original.textContent=hideOriginal?'':o;const s=document.getElementById('source');s.href=w.sourceUrl||'#';s.textContent=w.recommendedEditionSource||'Source'}
+const KEY='thought-worms-progress-v1';
+function readProgress(){try{return JSON.parse(localStorage.getItem(KEY)||'{}')}catch{return {}}}
+function writeProgress(progress){try{localStorage.setItem(KEY,JSON.stringify(progress))}catch{}}
+function idFor(w){return [w.category,w.artifact].join('::')}
+function chooseWorm(){const progress=readProgress();let min=Infinity;for(const w of worms){const seen=progress[idFor(w)]?.seen||0;if(seen<min)min=seen}const pool=worms.filter(w=>(progress[idFor(w)]?.seen||0)===min);return pool[Math.floor(Math.random()*pool.length)]}
+function markSeen(w){const progress=readProgress();const id=idFor(w);progress[id]={seen:(progress[id]?.seen||0)+1,lastSeen:Date.now()};writeProgress(progress)}
+function pick(){if(!worms.length)return;const w=chooseWorm();markSeen(w);document.title=w.category+' — Thought Worms';document.getElementById('category').textContent=w.category||'';document.getElementById('artifact').textContent=w.artifact||'';document.getElementById('english').textContent=w.english||'';document.getElementById('spanish').textContent=w.spanish||'';const original=document.getElementById('original');const o=(w.original||'').trim();const a=(w.artifact||'').trim();const hideOriginal=!o||o===a||o.endsWith(': non-text artifact');original.hidden=hideOriginal;original.textContent=hideOriginal?'':o;const s=document.getElementById('source');s.href=w.sourceUrl||'#';s.textContent=w.recommendedEditionSource||'Source'}
 document.getElementById('again').addEventListener('click',pick);pick();
 </script>
 </body>
