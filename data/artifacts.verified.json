@@ -1,5 +1,8 @@
-window.THOUGHT_WORMS = [
+[
   {
+    "id": "haiku-basho-first-winter-rain",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Haiku",
     "artifact": "Bashō — First Winter Rain",
     "original": "初しぐれ 猿も小蓑を ほしげなり",
@@ -10,6 +13,9 @@ window.THOUGHT_WORMS = [
     "notes": "Compact working rendering."
   },
   {
+    "id": "haiku-buson-butterfly-on-bell",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Haiku",
     "artifact": "Buson — Butterfly on Bell",
     "original": "釣鐘に とまりて眠る 胡蝶かな",
@@ -20,6 +26,9 @@ window.THOUGHT_WORMS = [
     "notes": "Compact working rendering."
   },
   {
+    "id": "haiku-issa-dewdrop-world",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Haiku",
     "artifact": "Issa — Dewdrop World",
     "original": "露の世は 露の世ながら さりながら",
@@ -30,6 +39,9 @@ window.THOUGHT_WORMS = [
     "notes": "Compact working rendering."
   },
   {
+    "id": "haiku-chiyo-ni-morning-glory-well",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Haiku",
     "artifact": "Chiyo-ni — Morning Glory Well",
     "original": "朝顔に つるべ取られて もらい水",
@@ -40,6 +52,9 @@ window.THOUGHT_WORMS = [
     "notes": "Compact working rendering."
   },
   {
+    "id": "haiku-shiki-after-persimmon",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Haiku",
     "artifact": "Shiki — After Persimmon",
     "original": "柿くへば 鐘が鳴るなり 法隆寺",
@@ -50,6 +65,9 @@ window.THOUGHT_WORMS = [
     "notes": "Compact working rendering."
   },
   {
+    "id": "koan-huineng-original-face",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Koan",
     "artifact": "Huineng — Original Face",
     "original": "不思善 不思悪 正与麼時 那箇是明上座本来面目",
@@ -60,6 +78,9 @@ window.THOUGHT_WORMS = [
     "notes": "Mumonkan tradition."
   },
   {
+    "id": "koan-kyogen-man-up-a-tree",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Koan",
     "artifact": "Kyōgen — Man Up a Tree",
     "original": "香嚴上樹",
@@ -70,6 +91,9 @@ window.THOUGHT_WORMS = [
     "notes": "Mumonkan tradition."
   },
   {
+    "id": "koan-bodhidharma-vast-emptiness",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Koan",
     "artifact": "Bodhidharma — Vast Emptiness",
     "original": "廓然無聖",
@@ -80,6 +104,9 @@ window.THOUGHT_WORMS = [
     "notes": "Blue Cliff Record tradition."
   },
   {
+    "id": "koan-yunmen-every-day",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Koan",
     "artifact": "Yunmen — Every Day",
     "original": "日日是好日",
@@ -90,6 +117,9 @@ window.THOUGHT_WORMS = [
     "notes": "Yunmen tradition."
   },
   {
+    "id": "koan-linji-no-rank",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Koan",
     "artifact": "Linji — No Rank",
     "original": "無位真人",
@@ -100,6 +130,9 @@ window.THOUGHT_WORMS = [
     "notes": "Linji tradition."
   },
   {
+    "id": "philosophical-fragment-heraclitus-nature-hides",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Philosophical Fragment",
     "artifact": "Heraclitus — Nature Hides",
     "original": "φύσις κρύπτεσθαι φιλεῖ",
@@ -110,6 +143,9 @@ window.THOUGHT_WORMS = [
     "notes": "Presocratic fragment."
   },
   {
+    "id": "philosophical-fragment-heraclitus-character",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Philosophical Fragment",
     "artifact": "Heraclitus — Character",
     "original": "ἦθος ἀνθρώπῳ δαίμων",
@@ -120,6 +156,9 @@ window.THOUGHT_WORMS = [
     "notes": "Presocratic fragment."
   },
   {
+    "id": "philosophical-fragment-anaxagoras-all-together",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Philosophical Fragment",
     "artifact": "Anaxagoras — All Together",
     "original": "πάντα χρήματα ἦν ὁμοῦ",
@@ -130,6 +169,9 @@ window.THOUGHT_WORMS = [
     "notes": "Presocratic fragment."
   },
   {
+    "id": "philosophical-fragment-protagoras-measure",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Philosophical Fragment",
     "artifact": "Protagoras — Measure",
     "original": "πάντων χρημάτων μέτρον ἐστὶν ἄνθρωπος",
@@ -140,6 +182,9 @@ window.THOUGHT_WORMS = [
     "notes": "Fragment preserved through Plato."
   },
   {
+    "id": "philosophical-fragment-sextus-epoche",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Philosophical Fragment",
     "artifact": "Sextus — Epoché",
     "original": "ἐποχή",
@@ -150,6 +195,9 @@ window.THOUGHT_WORMS = [
     "notes": "Pyrrhonian concept."
   },
   {
+    "id": "geometric-figure-hopf-fibration",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Geometric Figure",
     "artifact": "Hopf Fibration",
     "original": "Hopf Fibration: non-text artifact",
@@ -160,6 +208,9 @@ window.THOUGHT_WORMS = [
     "notes": "Non-text artifact."
   },
   {
+    "id": "geometric-figure-tesseract",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Geometric Figure",
     "artifact": "Tesseract",
     "original": "Tesseract: non-text artifact",
@@ -170,6 +221,9 @@ window.THOUGHT_WORMS = [
     "notes": "Non-text artifact."
   },
   {
+    "id": "geometric-figure-koch-snowflake",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Geometric Figure",
     "artifact": "Koch Snowflake",
     "original": "Koch Snowflake: non-text artifact",
@@ -180,6 +234,9 @@ window.THOUGHT_WORMS = [
     "notes": "Non-text artifact."
   },
   {
+    "id": "geometric-figure-apollonian-gasket",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Geometric Figure",
     "artifact": "Apollonian Gasket",
     "original": "Apollonian Gasket: non-text artifact",
@@ -190,6 +247,9 @@ window.THOUGHT_WORMS = [
     "notes": "Non-text artifact."
   },
   {
+    "id": "geometric-figure-catenary",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Geometric Figure",
     "artifact": "Catenary",
     "original": "Catenary: non-text artifact",
@@ -200,6 +260,9 @@ window.THOUGHT_WORMS = [
     "notes": "Non-text artifact."
   },
   {
+    "id": "musical-gesture-bach-chaconne-ground",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Musical Gesture",
     "artifact": "Bach — Chaconne Ground",
     "original": "Musical notation / repeating ground.",
@@ -210,6 +273,9 @@ window.THOUGHT_WORMS = [
     "notes": "Score source."
   },
   {
+    "id": "musical-gesture-palestrina-suspension",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Musical Gesture",
     "artifact": "Palestrina — Suspension",
     "original": "Musical notation / contrapuntal suspension.",
@@ -220,6 +286,9 @@ window.THOUGHT_WORMS = [
     "notes": "Score source."
   },
   {
+    "id": "musical-gesture-stravinsky-augurs-chord",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Musical Gesture",
     "artifact": "Stravinsky — Augurs Chord",
     "original": "Musical notation / repeated chord.",
@@ -230,6 +299,9 @@ window.THOUGHT_WORMS = [
     "notes": "Score source."
   },
   {
+    "id": "musical-gesture-reich-piano-phase",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Musical Gesture",
     "artifact": "Reich — Piano Phase",
     "original": "Musical process / gradual phase shift.",
@@ -240,6 +312,9 @@ window.THOUGHT_WORMS = [
     "notes": "Composer source."
   },
   {
+    "id": "musical-gesture-scelsi-one-tone",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Musical Gesture",
     "artifact": "Scelsi — One Tone",
     "original": "Musical notation / single-tone exploration.",
@@ -250,6 +325,9 @@ window.THOUGHT_WORMS = [
     "notes": "Composer foundation source."
   },
   {
+    "id": "scientific-diagram-turing-reaction-diffusion",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Scientific Diagram",
     "artifact": "Turing Reaction-Diffusion",
     "original": "Reaction-diffusion diagram: non-text artifact",
@@ -260,6 +338,9 @@ window.THOUGHT_WORMS = [
     "notes": "Science source."
   },
   {
+    "id": "scientific-diagram-hubble-tuning-fork",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Scientific Diagram",
     "artifact": "Hubble Tuning Fork",
     "original": "Galaxy classification diagram: non-text artifact",
@@ -270,6 +351,9 @@ window.THOUGHT_WORMS = [
     "notes": "Institutional source."
   },
   {
+    "id": "scientific-diagram-periodic-table",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Scientific Diagram",
     "artifact": "Periodic Table",
     "original": "Periodic table: non-text artifact",
@@ -280,6 +364,9 @@ window.THOUGHT_WORMS = [
     "notes": "Scientific source."
   },
   {
+    "id": "scientific-diagram-spacetime-diagram",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Scientific Diagram",
     "artifact": "Spacetime Diagram",
     "original": "Spacetime diagram: non-text artifact",
@@ -290,6 +377,9 @@ window.THOUGHT_WORMS = [
     "notes": "Science education source."
   },
   {
+    "id": "scientific-diagram-dna-double-helix",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Scientific Diagram",
     "artifact": "DNA Double Helix",
     "original": "Double helix diagram: non-text artifact",
@@ -300,6 +390,9 @@ window.THOUGHT_WORMS = [
     "notes": "Discovery paper source."
   },
   {
+    "id": "mathematical-object-riemann-zeta-function",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Mathematical Object",
     "artifact": "Riemann Zeta Function",
     "original": "ζ(s)=Σ n^{-s}",
@@ -310,6 +403,9 @@ window.THOUGHT_WORMS = [
     "notes": "Math source."
   },
   {
+    "id": "mathematical-object-euler-characteristic",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Mathematical Object",
     "artifact": "Euler Characteristic",
     "original": "χ = V − E + F",
@@ -320,6 +416,9 @@ window.THOUGHT_WORMS = [
     "notes": "Math source."
   },
   {
+    "id": "mathematical-object-fermat-s-last-theorem",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Mathematical Object",
     "artifact": "Fermat’s Last Theorem",
     "original": "x^n + y^n = z^n has no positive integer solutions for n > 2",
@@ -330,6 +429,9 @@ window.THOUGHT_WORMS = [
     "notes": "Reference source."
   },
   {
+    "id": "mathematical-object-poincare-recurrence",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Mathematical Object",
     "artifact": "Poincaré Recurrence",
     "original": "A bounded system returns arbitrarily close to itself.",
@@ -340,6 +442,9 @@ window.THOUGHT_WORMS = [
     "notes": "Reference source."
   },
   {
+    "id": "mathematical-object-laplace-transform",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Mathematical Object",
     "artifact": "Laplace Transform",
     "original": "F(s)=∫₀∞ f(t)e^{-st}dt",
@@ -350,6 +455,9 @@ window.THOUGHT_WORMS = [
     "notes": "Math source."
   },
   {
+    "id": "voces-porchia-open-door",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Voces",
     "artifact": "Porchia — Open Door",
     "original": "Hay puertas que no abrimos nunca y están abiertas.",
@@ -360,6 +468,9 @@ window.THOUGHT_WORMS = [
     "notes": "Original Spanish source tradition."
   },
   {
+    "id": "voces-porchia-nearness",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Voces",
     "artifact": "Porchia — Nearness",
     "original": "Lo lejano no es nada. Lo difícil es estar cerca.",
@@ -370,6 +481,9 @@ window.THOUGHT_WORMS = [
     "notes": "Original Spanish source tradition."
   },
   {
+    "id": "voces-porchia-one-step",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Voces",
     "artifact": "Porchia — One Step",
     "original": "He llegado a un paso de todo. Y aquí me quedo, lejos de todo.",
@@ -380,6 +494,9 @@ window.THOUGHT_WORMS = [
     "notes": "Original Spanish source tradition."
   },
   {
+    "id": "cantos-popol-vuh-dawn",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Cantos",
     "artifact": "Popol Vuh — Dawn",
     "original": "Que aclare, que amanezca en el cielo y en la tierra.",
@@ -390,6 +507,9 @@ window.THOUGHT_WORMS = [
     "notes": "Maya K'iche' source tradition."
   },
   {
+    "id": "cantos-cantares-mexicanos-flower-and-song",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Cantos",
     "artifact": "Cantares Mexicanos — Flower and Song",
     "original": "In xochitl in cuicatl",
@@ -400,6 +520,9 @@ window.THOUGHT_WORMS = [
     "notes": "Nahuatl manuscript source."
   },
   {
+    "id": "hymns-rigveda-1-89-noble-thoughts",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Hymns",
     "artifact": "Rigveda 1.89 — Noble Thoughts",
     "original": "आ नो भद्राः क्रतवो यन्तु विश्वतः",
@@ -410,6 +533,9 @@ window.THOUGHT_WORMS = [
     "notes": "Vedic source."
   },
   {
+    "id": "hymns-rigveda-10-191-together",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Hymns",
     "artifact": "Rigveda 10.191 — Together",
     "original": "संगच्छध्वं संवदध्वं",
@@ -420,6 +546,9 @@ window.THOUGHT_WORMS = [
     "notes": "Vedic source."
   },
   {
+    "id": "mahavakyas-brhadaranyaka-neti-neti",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Mahāvākyas",
     "artifact": "Bṛhadāraṇyaka — Neti Neti",
     "original": "नेति नेति",
@@ -430,6 +559,9 @@ window.THOUGHT_WORMS = [
     "notes": "Upanishadic formula."
   },
   {
+    "id": "mahavakyas-mundaka-two-birds",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Mahāvākyas",
     "artifact": "Muṇḍaka — Two Birds",
     "original": "द्वा सुपर्णा सयुजा सखाया",
@@ -440,6 +572,9 @@ window.THOUGHT_WORMS = [
     "notes": "Upanishadic image."
   },
   {
+    "id": "daoist-chapters-dao-de-jing-13",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Daoist Chapters",
     "artifact": "Dao De Jing 13",
     "original": "貴以身為天下",
@@ -450,6 +585,9 @@ window.THOUGHT_WORMS = [
     "notes": "Daoist source."
   },
   {
+    "id": "daoist-chapters-dao-de-jing-36",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Daoist Chapters",
     "artifact": "Dao De Jing 36",
     "original": "微明",
@@ -460,6 +598,9 @@ window.THOUGHT_WORMS = [
     "notes": "Daoist source."
   },
   {
+    "id": "sufi-poetry-ibn-arabi-capable-heart",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Sufi Poetry",
     "artifact": "Ibn Arabi — Capable Heart",
     "original": "لقد صار قلبي قابلاً كل صورة",
@@ -470,6 +611,9 @@ window.THOUGHT_WORMS = [
     "notes": "Short excerpt."
   },
   {
+    "id": "sufi-poetry-saadi-one-body",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Sufi Poetry",
     "artifact": "Saadi — One Body",
     "original": "بنی‌آدم اعضای یک پیکرند",
@@ -480,6 +624,9 @@ window.THOUGHT_WORMS = [
     "notes": "Short excerpt."
   },
   {
+    "id": "psalms-psalm-24-1",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Psalms",
     "artifact": "Psalm 24:1",
     "original": "לַיהוָה הָאָרֶץ וּמְלוֹאָהּ",
@@ -490,6 +637,9 @@ window.THOUGHT_WORMS = [
     "notes": "Hebrew Bible source."
   },
   {
+    "id": "psalms-psalm-131-2",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Psalms",
     "artifact": "Psalm 131:2",
     "original": "כְּגָמֻל עֲלֵי אִמּוֹ",
@@ -500,6 +650,9 @@ window.THOUGHT_WORMS = [
     "notes": "Hebrew Bible source."
   },
   {
+    "id": "desert-sayings-abba-anthony-neighbor",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Desert Sayings",
     "artifact": "Abba Anthony — Neighbor",
     "original": "Our life and our death are with our neighbor.",
@@ -510,6 +663,9 @@ window.THOUGHT_WORMS = [
     "notes": "Desert tradition."
   },
   {
+    "id": "zen-death-poems-jisei-bassui-look-directly",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Zen Death Poems (Jisei)",
     "artifact": "Bassui — Look Directly",
     "original": "直に見よ",
@@ -520,6 +676,9 @@ window.THOUGHT_WORMS = [
     "notes": "Zen source."
   },
   {
+    "id": "epitaphs-seikilos-epitaph",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Epitaphs",
     "artifact": "Seikilos Epitaph",
     "original": "ὅσον ζῇς φαίνου",
@@ -530,6 +689,9 @@ window.THOUGHT_WORMS = [
     "notes": "Museum source."
   },
   {
+    "id": "prayers-kyrie-eleison",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Prayers",
     "artifact": "Kyrie Eleison",
     "original": "Κύριε ἐλέησον",
@@ -540,6 +702,9 @@ window.THOUGHT_WORMS = [
     "notes": "Liturgical source."
   },
   {
+    "id": "natural-observations-thoreau-underfoot-heaven",
+    "sourceId": "legacy-curated",
+    "status": "verified",
     "category": "Natural Observations",
     "artifact": "Thoreau — Underfoot Heaven",
     "original": "Heaven is under our feet as well as over our heads.",
@@ -550,6 +715,7 @@ window.THOUGHT_WORMS = [
     "notes": "Public-domain source."
   },
   {
+    "id": "haiku-basho-rough-sea",
     "category": "Haiku",
     "artifact": "Bashō — Rough Sea",
     "original": "荒海や佐渡によこたふ天河",
@@ -557,9 +723,12 @@ window.THOUGHT_WORMS = [
     "spanish": "Mar bravo; extendiéndose hacia Sado, la Vía Láctea.",
     "recommendedEditionSource": "The Haiku Foundation — Matsuo Bashō",
     "sourceUrl": "https://thehaikufoundation.org/",
+    "sourceId": "haiku-foundation",
+    "status": "verified",
     "notes": "Candidate batch 2026-07-05; compact working rendering."
   },
   {
+    "id": "haiku-basho-sick-journey",
     "category": "Haiku",
     "artifact": "Bashō — Sick on a Journey",
     "original": "旅に病んで夢は枯野をかけ廻る",
@@ -567,9 +736,12 @@ window.THOUGHT_WORMS = [
     "spanish": "Enfermo en el viaje; mis sueños vagan por campos secos.",
     "recommendedEditionSource": "The Haiku Foundation — Matsuo Bashō",
     "sourceUrl": "https://thehaikufoundation.org/",
+    "sourceId": "haiku-foundation",
+    "status": "verified",
     "notes": "Candidate batch 2026-07-05; compact working rendering."
   },
   {
+    "id": "haiku-issa-dont-swat",
     "category": "Haiku",
     "artifact": "Issa — Do Not Swat",
     "original": "やれ打つな蠅が手をすり足をする",
@@ -577,9 +749,12 @@ window.THOUGHT_WORMS = [
     "spanish": "No golpees a la mosca; se frota las manos, se frota los pies.",
     "recommendedEditionSource": "The Haiku Foundation — Kobayashi Issa",
     "sourceUrl": "https://thehaikufoundation.org/",
+    "sourceId": "haiku-foundation",
+    "status": "verified",
     "notes": "Candidate batch 2026-07-05; compact working rendering."
   },
   {
+    "id": "haiku-shiki-snow-depth",
     "category": "Haiku",
     "artifact": "Shiki — Snow Depth",
     "original": "いくたびも雪の深さを尋ねけり",
@@ -587,9 +762,12 @@ window.THOUGHT_WORMS = [
     "spanish": "Una y otra vez pregunto qué tan profunda está la nieve.",
     "recommendedEditionSource": "The Haiku Foundation — Masaoka Shiki",
     "sourceUrl": "https://thehaikufoundation.org/",
+    "sourceId": "haiku-foundation",
+    "status": "verified",
     "notes": "Candidate batch 2026-07-05; compact working rendering."
   },
   {
+    "id": "haiku-buson-summer-rain-houses",
     "category": "Haiku",
     "artifact": "Buson — Summer Rain Houses",
     "original": "五月雨や大河を前に家二軒",
@@ -597,9 +775,12 @@ window.THOUGHT_WORMS = [
     "spanish": "Lluvias de verano; ante el gran río, dos casas.",
     "recommendedEditionSource": "The Haiku Foundation — Yosa Buson",
     "sourceUrl": "https://thehaikufoundation.org/",
+    "sourceId": "haiku-foundation",
+    "status": "verified",
     "notes": "Candidate batch 2026-07-05; compact working rendering."
   },
   {
+    "id": "koan-joshu-wash-bowl",
     "category": "Koan",
     "artifact": "Jōshū — Wash Your Bowl",
     "original": "喫粥了也未。洗鉢盂去。",
@@ -607,9 +788,12 @@ window.THOUGHT_WORMS = [
     "spanish": "¿Ya comiste tus gachas de arroz? Entonces lava tu cuenco.",
     "recommendedEditionSource": "Sacred Texts — The Gateless Gate",
     "sourceUrl": "https://sacred-texts.com/bud/zen/mumonkan.htm",
+    "sourceId": "mumonkan-sacred-texts",
+    "status": "verified",
     "notes": "Mumonkan tradition; compact working rendering."
   },
   {
+    "id": "koan-gutei-one-finger",
     "category": "Koan",
     "artifact": "Gutei — One Finger",
     "original": "俱胝竪一指",
@@ -617,9 +801,12 @@ window.THOUGHT_WORMS = [
     "spanish": "Gutei levantó un dedo.",
     "recommendedEditionSource": "Sacred Texts — The Gateless Gate",
     "sourceUrl": "https://sacred-texts.com/bud/zen/mumonkan.htm",
+    "sourceId": "mumonkan-sacred-texts",
+    "status": "verified",
     "notes": "Mumonkan tradition; compact working rendering."
   },
   {
+    "id": "koan-nansen-ordinary-mind",
     "category": "Koan",
     "artifact": "Nansen — Ordinary Mind",
     "original": "平常心是道",
@@ -627,9 +814,12 @@ window.THOUGHT_WORMS = [
     "spanish": "La mente ordinaria es el Camino.",
     "recommendedEditionSource": "Sacred Texts — The Gateless Gate",
     "sourceUrl": "https://sacred-texts.com/bud/zen/mumonkan.htm",
+    "sourceId": "mumonkan-sacred-texts",
+    "status": "verified",
     "notes": "Mumonkan tradition; compact working rendering."
   },
   {
+    "id": "psalm-19-1-heavens",
     "category": "Psalms",
     "artifact": "Psalm 19:1 — Heavens Declare",
     "original": "הַשָּׁמַיִם מְסַפְּרִים כְּבוֹד־אֵל",
@@ -637,9 +827,12 @@ window.THOUGHT_WORMS = [
     "spanish": "Los cielos cuentan la gloria de Dios.",
     "recommendedEditionSource": "Sefaria — Psalms 19:1",
     "sourceUrl": "https://www.sefaria.org/Psalms.19.1",
+    "sourceId": "sefaria-psalms",
+    "status": "verified",
     "notes": "Hebrew Bible source; compact working rendering."
   },
   {
+    "id": "psalm-42-7-deep-calls",
     "category": "Psalms",
     "artifact": "Psalm 42:7 — Deep Calls",
     "original": "תְּהוֹם־אֶל־תְּהוֹם קוֹרֵא",
@@ -647,9 +840,12 @@ window.THOUGHT_WORMS = [
     "spanish": "Un abismo llama a otro abismo.",
     "recommendedEditionSource": "Sefaria — Psalms 42:7",
     "sourceUrl": "https://www.sefaria.org/Psalms.42.7",
+    "sourceId": "sefaria-psalms",
+    "status": "verified",
     "notes": "Hebrew Bible source; compact working rendering."
   },
   {
+    "id": "psalm-90-12-number-days",
     "category": "Psalms",
     "artifact": "Psalm 90:12 — Number Our Days",
     "original": "לִמְנוֹת יָמֵינוּ כֵּן הוֹדַע",
@@ -657,9 +853,12 @@ window.THOUGHT_WORMS = [
     "spanish": "Enséñanos a contar nuestros días.",
     "recommendedEditionSource": "Sefaria — Psalms 90:12",
     "sourceUrl": "https://www.sefaria.org/Psalms.90.12",
+    "sourceId": "sefaria-psalms",
+    "status": "verified",
     "notes": "Hebrew Bible source; compact working rendering."
   },
   {
+    "id": "psalm-139-12-night-light",
     "category": "Psalms",
     "artifact": "Psalm 139:12 — Night Shines",
     "original": "וְלַיְלָה כַּיּוֹם יָאִיר",
@@ -667,9 +866,12 @@ window.THOUGHT_WORMS = [
     "spanish": "La noche resplandece como el día.",
     "recommendedEditionSource": "Sefaria — Psalms 139:12",
     "sourceUrl": "https://www.sefaria.org/Psalms.139.12",
+    "sourceId": "sefaria-psalms",
+    "status": "verified",
     "notes": "Hebrew Bible source; compact working rendering."
   },
   {
+    "id": "dao-11-usefulness-empty",
     "category": "Daoist Chapters",
     "artifact": "Dao De Jing 11 — Use of Emptiness",
     "original": "有之以為利，無之以為用",
@@ -677,9 +879,12 @@ window.THOUGHT_WORMS = [
     "spanish": "Lo que está da provecho; lo que no está da uso.",
     "recommendedEditionSource": "Chinese Text Project — Dao De Jing",
     "sourceUrl": "https://ctext.org/dao-de-jing",
+    "sourceId": "ctext-daodejing",
+    "status": "verified",
     "notes": "Classical Chinese source; compact working rendering."
   },
   {
+    "id": "dao-16-return-root",
     "category": "Daoist Chapters",
     "artifact": "Dao De Jing 16 — Return to Root",
     "original": "歸根曰靜",
@@ -687,9 +892,12 @@ window.THOUGHT_WORMS = [
     "spanish": "Volver a la raíz se llama quietud.",
     "recommendedEditionSource": "Chinese Text Project — Dao De Jing",
     "sourceUrl": "https://ctext.org/dao-de-jing",
+    "sourceId": "ctext-daodejing",
+    "status": "verified",
     "notes": "Classical Chinese source; compact working rendering."
   },
   {
+    "id": "dao-40-returning",
     "category": "Daoist Chapters",
     "artifact": "Dao De Jing 40 — Returning",
     "original": "反者道之動",
@@ -697,9 +905,12 @@ window.THOUGHT_WORMS = [
     "spanish": "El retorno es el movimiento del Dao.",
     "recommendedEditionSource": "Chinese Text Project — Dao De Jing",
     "sourceUrl": "https://ctext.org/dao-de-jing",
+    "sourceId": "ctext-daodejing",
+    "status": "verified",
     "notes": "Classical Chinese source; compact working rendering."
   },
   {
+    "id": "dao-48-less-and-less",
     "category": "Daoist Chapters",
     "artifact": "Dao De Jing 48 — Less and Less",
     "original": "為道日損",
@@ -707,9 +918,12 @@ window.THOUGHT_WORMS = [
     "spanish": "Al seguir el Dao, cada día menos.",
     "recommendedEditionSource": "Chinese Text Project — Dao De Jing",
     "sourceUrl": "https://ctext.org/dao-de-jing",
+    "sourceId": "ctext-daodejing",
+    "status": "verified",
     "notes": "Classical Chinese source; compact working rendering."
   },
   {
+    "id": "rigveda-1-164-one-truth",
     "category": "Hymns",
     "artifact": "Rigveda 1.164 — One Truth",
     "original": "एकं सद् विप्रा बहुधा वदन्ति",
@@ -717,9 +931,12 @@ window.THOUGHT_WORMS = [
     "spanish": "La verdad es una; los sabios la dicen de muchas maneras.",
     "recommendedEditionSource": "Sanskrit Documents — Rigveda",
     "sourceUrl": "https://sanskritdocuments.org/doc_veda/rigveda.html",
+    "sourceId": "sanskrit-docs-rigveda",
+    "status": "verified",
     "notes": "Vedic source; compact working rendering."
   },
   {
+    "id": "rigveda-gayatri",
     "category": "Hymns",
     "artifact": "Rigveda 3.62.10 — Gayatri",
     "original": "तत्सवितुर्वरेण्यं भर्गो देवस्य धीमहि",
@@ -727,9 +944,12 @@ window.THOUGHT_WORMS = [
     "spanish": "Meditamos en el resplandor venerable de Savitṛ.",
     "recommendedEditionSource": "Sanskrit Documents — Rigveda",
     "sourceUrl": "https://sanskritdocuments.org/doc_veda/rigveda.html",
+    "sourceId": "sanskrit-docs-rigveda",
+    "status": "verified",
     "notes": "Vedic source; compact working rendering."
   },
   {
+    "id": "rigveda-nasadiya-neither",
     "category": "Hymns",
     "artifact": "Rigveda 10.129 — Neither Being",
     "original": "नासदासीन्नो सदासीत्तदानीम्",
@@ -737,9 +957,12 @@ window.THOUGHT_WORMS = [
     "spanish": "Entonces no había ni no-ser ni ser.",
     "recommendedEditionSource": "Sanskrit Documents — Rigveda",
     "sourceUrl": "https://sanskritdocuments.org/doc_veda/rigveda.html",
+    "sourceId": "sanskrit-docs-rigveda",
+    "status": "verified",
     "notes": "Vedic source; compact working rendering."
   },
   {
+    "id": "upanishad-tat-tvam-asi",
     "category": "Mahāvākyas",
     "artifact": "Chāndogya — Tat Tvam Asi",
     "original": "तत् त्वम् असि",
@@ -747,9 +970,12 @@ window.THOUGHT_WORMS = [
     "spanish": "Tú eres Eso.",
     "recommendedEditionSource": "Sacred Texts — Upanishads",
     "sourceUrl": "https://sacred-texts.com/hin/sbe15/",
+    "sourceId": "sacred-texts-upanishads",
+    "status": "verified",
     "notes": "Upanishadic formula; compact working rendering."
   },
   {
+    "id": "upanishad-aham-brahmasmi",
     "category": "Mahāvākyas",
     "artifact": "Bṛhadāraṇyaka — Aham Brahmāsmi",
     "original": "अहं ब्रह्मास्मि",
@@ -757,9 +983,12 @@ window.THOUGHT_WORMS = [
     "spanish": "Yo soy Brahman.",
     "recommendedEditionSource": "Sacred Texts — Upanishads",
     "sourceUrl": "https://sacred-texts.com/hin/sbe15/",
+    "sourceId": "sacred-texts-upanishads",
+    "status": "verified",
     "notes": "Upanishadic formula; compact working rendering."
   },
   {
+    "id": "nezahualcoyotl-root-earth",
     "category": "Cantos",
     "artifact": "Nezahualcóyotl — Root in Earth",
     "original": "¿Acaso de veras se vive con raíz en la tierra?",
@@ -767,9 +996,12 @@ window.THOUGHT_WORMS = [
     "spanish": "¿Acaso de veras se vive con raíz en la tierra?",
     "recommendedEditionSource": "University of Oklahoma Press — Fifteen Poets of the Aztec World",
     "sourceUrl": "https://www.oupress.com/9780806132914/fifteen-poets-of-the-aztec-world/",
+    "sourceId": "oup-aztec-poets",
+    "status": "verified",
     "notes": "Nahuatl poetic tradition via Spanish scholarly rendering."
   },
   {
+    "id": "cantares-my-flowers-endure",
     "category": "Cantos",
     "artifact": "Cantares Mexicanos — My Flowers Endure",
     "original": "No acabarán mis flores, no cesarán mis cantos.",
@@ -777,9 +1009,12 @@ window.THOUGHT_WORMS = [
     "spanish": "No acabarán mis flores, no cesarán mis cantos.",
     "recommendedEditionSource": "Library of Congress — Cantares Mexicanos",
     "sourceUrl": "https://www.loc.gov/item/2021668058/",
+    "sourceId": "loc-cantares-mexicanos",
+    "status": "verified",
     "notes": "Nahuatl manuscript tradition via Spanish rendering."
   },
   {
+    "id": "rumi-reed-listen",
     "category": "Sufi Poetry",
     "artifact": "Rumi — Listen to the Reed",
     "original": "بشنو از نی چون حکایت می‌کند",
@@ -787,9 +1022,12 @@ window.THOUGHT_WORMS = [
     "spanish": "Escucha la caña, cómo cuenta su historia.",
     "recommendedEditionSource": "Poetry Foundation — Rumi",
     "sourceUrl": "https://www.poetryfoundation.org/poets/jalal-al-din-rumi",
+    "sourceId": "poetryfoundation-rumi",
+    "status": "verified",
     "notes": "Persian Sufi source; compact working rendering."
   },
   {
+    "id": "hafez-cupbearer",
     "category": "Sufi Poetry",
     "artifact": "Hafez — Cupbearer",
     "original": "الا يا أيها الساقي ادر كأسا وناولها",
@@ -797,6 +1035,8 @@ window.THOUGHT_WORMS = [
     "spanish": "Oh copero, haz girar la copa y pásala.",
     "recommendedEditionSource": "Poetry Foundation — Hafez",
     "sourceUrl": "https://www.poetryfoundation.org/poets/hafez",
+    "sourceId": "poetryfoundation-hafez",
+    "status": "verified",
     "notes": "Persian ghazal tradition; compact working rendering."
   }
-];
+]
