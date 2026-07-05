@@ -1,51 +1,26 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hello, world!</title>
-  <style>
-    :root {
-      color-scheme: dark;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    html,
-    body {
-      margin: 0;
-      min-height: 100%;
-    }
-
-    body {
-      min-height: 100vh;
-      min-height: 100svh;
-      display: grid;
-      place-items: center;
-      background: #111;
-      color: #fff;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      padding: 1.5rem;
-    }
-
-    main {
-      text-align: center;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: clamp(2.5rem, 10vw, 7rem);
-      line-height: 1;
-      font-weight: 700;
-      letter-spacing: -0.06em;
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Thought Worms</title>
+<style>
+:root{color-scheme:dark;--bg:#111;--fg:#f4f1ea;--muted:#aaa39a;--line:#3a3936;--accent:#d8c59d}*{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;background:#111;color:var(--fg);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.4;padding:1rem}main{width:min(980px,100%)}article{border:1px solid var(--line);border-radius:28px;padding:clamp(1.2rem,5vw,3.4rem);background:rgba(255,255,255,.035)}.meta{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:2rem;color:var(--muted);font-size:.9rem}.pill{border:1px solid var(--line);border-radius:999px;padding:.35rem .7rem}h1{margin:0 0 .75rem;color:var(--accent);font-size:clamp(1.15rem,2vw,1.6rem);font-weight:600}.original{margin:0 0 2rem;color:var(--muted);font-size:1.05rem}.texts{display:grid;gap:1.5rem;margin:2rem 0}.block{border-top:1px solid var(--line);padding-top:1rem}.label{margin:0 0 .5rem;color:var(--muted);font-size:.75rem;text-transform:uppercase;letter-spacing:.12em}.text{margin:0;font-size:clamp(1.7rem,6vw,4.4rem);line-height:1.05;letter-spacing:-.045em;text-wrap:balance}footer{display:flex;gap:1rem;flex-wrap:wrap;justify-content:space-between;align-items:center;margin-top:2rem;color:var(--muted);font-size:.9rem}a{color:var(--accent);text-decoration:none}button{border:1px solid var(--line);background:transparent;color:var(--fg);border-radius:999px;padding:.65rem .95rem;font:inherit;cursor:pointer}@media(min-width:760px){.texts{grid-template-columns:1fr 1fr}}
+</style>
 </head>
 <body>
-  <main>
-    <h1>Hello, world! 👋</h1>
-  </main>
+<main><article>
+<div class="meta"><span class="pill" id="category"></span><span class="pill" id="artifact"></span></div>
+<h1 id="title"></h1>
+<p class="original" id="original"></p>
+<section class="texts"><div class="block"><p class="label">English</p><p class="text" id="english"></p></div><div class="block"><p class="label">Spanish</p><p class="text" id="spanish"></p></div></section>
+<footer><a id="source" href="#" target="_blank" rel="noreferrer">Source</a><button id="again" type="button">Another worm</button></footer>
+</article></main>
+<script src="./thought-worms.js"></script>
+<script>
+const worms=Array.isArray(window.THOUGHT_WORMS)?window.THOUGHT_WORMS:[];
+function pick(){if(!worms.length)return;const w=worms[Math.floor(Math.random()*worms.length)];document.title=w.category+' — Thought Worms';['category','artifact','original','english','spanish'].forEach(k=>document.getElementById(k).textContent=w[k]||'');document.getElementById('title').textContent=w.artifact||'';const s=document.getElementById('source');s.href=w.sourceUrl||'#';s.textContent=w.recommendedEditionSource||'Source'}
+document.getElementById('again').addEventListener('click',pick);pick();
+</script>
 </body>
 </html>
