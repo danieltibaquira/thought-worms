@@ -1,0 +1,52 @@
+[
+  {
+    "id": "mumonkan-sacred-texts",
+    "category": "Koan",
+    "title": "The Gateless Gate",
+    "language": "Classical Chinese / Japanese Zen tradition",
+    "url": "https://sacred-texts.com/bud/zen/mumonkan.htm",
+    "license": "public-domain-reference",
+    "priority": "high",
+    "harvester": "manual"
+  },
+  {
+    "id": "ctext-daodejing",
+    "category": "Daoist Chapters",
+    "title": "Dao De Jing",
+    "language": "Classical Chinese",
+    "url": "https://ctext.org/dao-de-jing",
+    "license": "reference",
+    "priority": "high",
+    "harvester": "manual"
+  },
+  {
+    "id": "sefaria-psalms",
+    "category": "Psalms",
+    "title": "Psalms",
+    "language": "Hebrew",
+    "url": "https://www.sefaria.org/Psalms",
+    "license": "reference",
+    "priority": "high",
+    "harvester": "manual"
+  },
+  {
+    "id": "loc-cantares-mexicanos",
+    "category": "Cantos",
+    "title": "Cantares Mexicanos",
+    "language": "Nahuatl",
+    "url": "https://www.loc.gov/item/2021668058/",
+    "license": "archival-reference",
+    "priority": "high",
+    "harvester": "manual"
+  },
+  {
+    "id": "haiku-foundation",
+    "category": "Haiku",
+    "title": "Haiku Foundation Resources",
+    "language": "Japanese",
+    "url": "https://thehaikufoundation.org/",
+    "license": "reference",
+    "priority": "medium",
+    "harvester": "manual"
+  }
+]
