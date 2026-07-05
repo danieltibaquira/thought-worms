@@ -1,1 +1,1 @@
-{"scripts":{"test":"node scripts/validate.mjs"},"devDependencies":{}}
+{"scripts":{"test":"node scripts/validate.mjs && node scripts/validate-pipeline.mjs","validate:corpus":"node scripts/validate.mjs","validate:pipeline":"node scripts/validate-pipeline.mjs","report":"node scripts/review-report.mjs"},"devDependencies":{}}
