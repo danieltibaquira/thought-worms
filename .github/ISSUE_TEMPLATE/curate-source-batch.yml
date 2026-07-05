@@ -1,0 +1,40 @@
+name: Curate source batch
+description: Ask Codex/agent to harvest candidates from a registered source.
+title: "Curate source: <source-id>"
+labels: [curation, candidate-batch]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this for source-grounded curation only. The source must exist in `data/sources.json` before candidates are added.
+  - type: input
+    id: source_id
+    attributes:
+      label: Source id
+      description: Must match an id in `data/sources.json`.
+      placeholder: mumonkan-sacred-texts
+    validations:
+      required: true
+  - type: input
+    id: target_count
+    attributes:
+      label: Target candidate count
+      placeholder: "25"
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope / sections
+      description: Which chapters, cases, poems, folios, pages, or passages should be harvested?
+      placeholder: "Cases 1–10 only; keep candidates under 30 seconds of reading."
+    validations:
+      required: true
+  - type: textarea
+    id: quality_bar
+    attributes:
+      label: Quality bar
+      description: Density, memorability, contemplative use, translation requirements, exclusions.
+      placeholder: "No generic summaries. Preserve original script. English/Spanish must be actual content or marked working translation."
+    validations:
+      required: true
