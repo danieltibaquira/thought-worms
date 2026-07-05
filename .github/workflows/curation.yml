@@ -1,0 +1,42 @@
+name: Queue Curation Batch
+
+on:
+  workflow_dispatch:
+    inputs:
+      source_id:
+        description: 'Source id from data/sources.json'
+        required: true
+        default: 'mumonkan-sacred-texts'
+      limit:
+        description: 'Candidate target count'
+        required: true
+        default: '25'
+
+permissions:
+  contents: write
+
+jobs:
+  queue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Queue candidate harvest
+        run: node scripts/harvest-stub.mjs "${{ inputs.source_id }}" "${{ inputs.limit }}"
+
+      - name: Commit candidate batch
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Queue curation batch for ${{ inputs.source_id }}"
+          file_pattern: data/artifacts.candidates.json
+
+      - name: Generate corpus report
+        run: node scripts/review-report.mjs | tee -a "$GITHUB_STEP_SUMMARY"
