@@ -1,0 +1,39 @@
+name: Promote candidates
+description: Review and promote verified candidate artifacts into the live corpus.
+title: "Promote candidates: <source-id or batch>"
+labels: [curation, promote]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this after candidates exist in `data/artifacts.candidates.json`. Promotion should move only verified rows into the live corpus and archive rejected rows.
+  - type: input
+    id: candidate_ids
+    attributes:
+      label: Candidate ids to promote
+      description: Comma-separated ids, or say "all verified in current candidate file".
+      placeholder: "mumonkan-001,mumonkan-002"
+    validations:
+      required: true
+  - type: textarea
+    id: review_notes
+    attributes:
+      label: Review notes
+      description: Why these pass the library standard. Mention source checks, translation status, and any uncertainty.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Required checks
+      options:
+        - label: Original content is present and not duplicated.
+          required: true
+        - label: English and Spanish columns are actual artifact content, not generic summaries.
+          required: true
+        - label: Source URL resolves to a legitimate reference for the artifact.
+          required: true
+        - label: Non-text rows include an authoritative link.
+          required: true
+        - label: Copyright limits are respected.
+          required: true
