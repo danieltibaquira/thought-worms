@@ -1,4 +1,5 @@
 import { readJson, writeJson, validateNoDuplicateContent } from './pipeline-lib.mjs';
+import { execFileSync } from 'node:child_process';
 
 const idsArg = process.argv[2];
 if (!idsArg) {
@@ -6,11 +7,13 @@ if (!idsArg) {
   process.exit(1);
 }
 
+const verified = readJson('data/artifacts.verified.json', []);
 const candidates = readJson('data/artifacts.candidates.json', []);
 const rejected = readJson('data/artifacts.rejected.json', []);
+const requestedIds = idsArg.split(',').map((id) => id.trim()).filter(Boolean);
 const selected = idsArg === 'all-verified'
   ? candidates.filter((row) => row.status === 'verified')
-  : candidates.filter((row) => idsArg.split(',').map((id) => id.trim()).includes(row.id));
+  : candidates.filter((row) => requestedIds.includes(row.id));
 
 if (!selected.length) {
   console.error('No candidates selected for promotion.');
@@ -24,15 +27,18 @@ for (const row of selected) {
   }
 }
 
-validateNoDuplicateContent(selected, 'selected candidates');
+const nextVerified = verified.concat(selected);
+validateNoDuplicateContent(nextVerified, 'verified+candidates');
 
-const remaining = candidates.filter((row) => !selected.some((selectedRow) => selectedRow.id === row.id));
+const selectedIds = new Set(selected.map((row) => row.id));
+const remaining = candidates.filter((row) => !selectedIds.has(row.id));
 const archived = rejected.concat(remaining.filter((row) => row.status === 'rejected'));
 const nextCandidates = remaining.filter((row) => row.status !== 'rejected');
 
+writeJson('data/artifacts.verified.json', nextVerified);
 writeJson('data/artifacts.promoted.json', selected);
 writeJson('data/artifacts.candidates.json', nextCandidates);
 writeJson('data/artifacts.rejected.json', archived);
 
-console.log(`Promoted ${selected.length} candidates into data/artifacts.promoted.json.`);
-console.log('Review promoted artifacts, merge into live corpus, then clear promoted file.');
+execFileSync('node', ['scripts/build-live-corpus.mjs'], { stdio: 'inherit' });
+console.log(`Promoted ${selected.length} candidates into verified corpus.`);
