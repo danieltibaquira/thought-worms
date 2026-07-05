@@ -1,17 +1,38 @@
 const worms = Array.isArray(window.THOUGHT_WORMS) ? window.THOUGHT_WORMS : [];
-let cursor = 0;
+const PREFIX = 'thought-worms:';
 
-function seed() {
-  const d = new Date();
-  return d.getFullYear() * 10000 + (d.getMonth() + 1) * 100 + d.getDate();
+function getState() {
+  if (!window.name || !window.name.startsWith(PREFIX)) return { index: 0, order: [] };
+  try { return JSON.parse(window.name.slice(PREFIX.length)); }
+  catch { return { index: 0, order: [] }; }
 }
 
-function score(index) {
-  const x = Math.sin((index + 1) * 99991 + seed()) * 10000;
-  return x - Math.floor(x);
+function setState(state) {
+  window.name = PREFIX + JSON.stringify(state);
 }
 
-const order = worms.map((_, index) => index).sort((a, b) => score(a) - score(b));
+function hash(value) {
+  let h = 2166136261;
+  for (let i = 0; i < value.length; i += 1) {
+    h ^= value.charCodeAt(i);
+    h = Math.imul(h, 16777619);
+  }
+  return h >>> 0;
+}
+
+function makeOrder() {
+  const salt = String(Date.now()) + String(Math.random());
+  return worms
+    .map((worm, index) => ({ index, score: hash(`${salt}:${worm.category}:${worm.artifact}`) }))
+    .sort((a, b) => a.score - b.score)
+    .map((item) => item.index);
+}
+
+function normalizeState(state) {
+  const valid = Array.isArray(state.order) && state.order.length === worms.length;
+  if (!valid || state.index >= state.order.length) return { index: 0, order: makeOrder() };
+  return state;
+}
 
 function setText(id, value) {
   const element = document.getElementById(id);
@@ -20,8 +41,11 @@ function setText(id, value) {
 
 function pick() {
   if (!worms.length) return;
-  const worm = worms[order[cursor % order.length]];
-  cursor += 1;
+
+  const state = normalizeState(getState());
+  const worm = worms[state.order[state.index]];
+  state.index += 1;
+  setState(state);
 
   document.title = worm.category + ' — Thought Worms';
   setText('category', worm.category);
