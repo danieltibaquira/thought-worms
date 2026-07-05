@@ -1,0 +1,46 @@
+name: Run Corpus Pipeline
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'data/artifacts.candidates.json'
+      - 'data/sources.json'
+      - 'scripts/**'
+      - '.github/workflows/pipeline.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Migrate live corpus into verified store
+        run: npm run migrate:live
+
+      - name: Promote verified candidates
+        run: npm run promote:verified
+
+      - name: Validate pipeline
+        run: npm test
+
+      - name: Generate corpus report
+        run: node scripts/review-report.mjs | tee corpus-report.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit generated corpus outputs
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Run corpus pipeline"
+          file_pattern: data/artifacts.verified.json data/artifacts.promoted.json data/artifacts.candidates.json data/artifacts.rejected.json extra-worms-001.js corpus-report.md
