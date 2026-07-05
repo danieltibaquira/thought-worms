@@ -8,14 +8,10 @@ import {
 } from './pipeline-lib.mjs';
 
 const sources = readJson('data/sources.json', []);
+const verified = readJson('data/artifacts.verified.json', []);
 const candidates = readJson('data/artifacts.candidates.json', []);
 const rejected = readJson('data/artifacts.rejected.json', []);
-const liveRows = loadLiveRows().map((row, index) => ({
-  id: row.id || `${row.category}::${row.artifact}`,
-  sourceId: row.sourceId || 'legacy-curated',
-  status: row.status || 'verified',
-  ...row
-}));
+const liveRows = loadLiveRows();
 
 const errors = [];
 function check(fn) {
@@ -36,27 +32,34 @@ check(() => {
   }
 });
 
-const sourcesWithLegacy = new Map(sources.map((source) => [source.id, source]));
-sourcesWithLegacy.set('legacy-curated', { id: 'legacy-curated' });
+const sourcesById = new Map(sources.map((source) => [source.id, source]));
 
 for (const [name, rows, requireVerified] of [
-  ['live', liveRows, true],
+  ['verified', verified, true],
   ['candidates', candidates, false],
   ['rejected', rejected, false]
 ]) {
   check(() => {
     if (!Array.isArray(rows)) throw new Error(`${name} artifact store must be an array`);
-    for (const [index, row] of rows.entries()) assertValidArtifact(row, index, sourcesWithLegacy, { requireVerified });
+    for (const [index, row] of rows.entries()) assertValidArtifact(row, index, sourcesById, { requireVerified });
     validateNoDuplicateContent(rows, name);
   });
 }
 
-check(() => validateNoDuplicateContent([...liveRows, ...candidates], 'live+candidates'));
+check(() => validateNoDuplicateContent([...verified, ...candidates], 'verified+candidates'));
 
 check(() => {
-  for (const row of liveRows) {
+  const liveIds = new Set(liveRows.map((row) => `${row.category}::${row.artifact}`));
+  for (const row of verified) {
+    const liveId = `${row.category}::${row.artifact}`;
+    if (!liveIds.has(liveId)) throw new Error(`verified row missing from live build: ${row.id}`);
+  }
+});
+
+check(() => {
+  for (const row of verified) {
     if (nonTextCategories.has(row.category) && !row.sourceUrl.startsWith('https://')) {
-      throw new Error(`non-text live row ${row.id} missing link`);
+      throw new Error(`non-text verified row ${row.id} missing link`);
     }
   }
 });
@@ -66,4 +69,4 @@ if (errors.length) {
   process.exit(1);
 }
 
-console.log(`pipeline validation passed: ${liveRows.length} live, ${candidates.length} candidates, ${rejected.length} rejected, ${sources.length} sources`);
+console.log(`pipeline validation passed: ${verified.length} verified, ${candidates.length} candidates, ${rejected.length} rejected, ${sources.length} sources`);
