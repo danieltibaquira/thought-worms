@@ -6,11 +6,13 @@ export const categories = [
   'Musical Gesture', 'Scientific Diagram', 'Mathematical Object',
   'Voces', 'Cantos', 'Hymns', 'Mahāvākyas', 'Daoist Chapters',
   'Sufi Poetry', 'Psalms', 'Desert Sayings', 'Zen Death Poems (Jisei)',
-  'Epitaphs', 'Prayers', 'Natural Observations'
+  'Epitaphs', 'Prayers', 'Natural Observations', 'Esoteric Formula',
+  'Occult Diagram', 'Ritual Fragment'
 ];
 
 export const nonTextCategories = new Set([
-  'Geometric Figure', 'Musical Gesture', 'Scientific Diagram', 'Mathematical Object'
+  'Geometric Figure', 'Musical Gesture', 'Scientific Diagram', 'Mathematical Object',
+  'Occult Diagram'
 ]);
 
 export const requiredArtifactFields = [
