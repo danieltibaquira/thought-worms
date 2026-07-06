@@ -1,0 +1,85 @@
+{
+  "generatedAt": "2026-07-05T00:00:00.000Z",
+  "targetCount": 6,
+  "availableCount": 3,
+  "discoveryOnlyCount": 2,
+  "results": [
+    {
+      "sourceId": "crowley-liber-al-oto",
+      "title": "Liber AL vel Legis — O.T.O. public library witness",
+      "category": "Esoteric Formula",
+      "url": "https://lib.oto-usa.org/libri/liber0220.html",
+      "mode": "public-html-text",
+      "status": "available",
+      "candidateLimit": 36,
+      "preferredThemeHits": ["will", "love", "star", "law", "void", "light", "ritual", "formula"],
+      "safety": {
+        "storeFullText": false,
+        "maxOriginalWords": 18
+      }
+    },
+    {
+      "sourceId": "crowley-liber-al-hermetic",
+      "title": "Liber AL vel Legis — Hermetic Library witness",
+      "category": "Esoteric Formula",
+      "url": "https://hermetic.com/crowley/libers/lib220",
+      "mode": "public-html-cross-check",
+      "status": "available",
+      "candidateLimit": 0,
+      "preferredThemeHits": ["will", "love", "law", "star", "void"],
+      "safety": {
+        "storeFullText": false
+      }
+    },
+    {
+      "sourceId": "crowley-liber-777-hermetic",
+      "title": "Liber 777 correspondence tables — Hermetic Library witness",
+      "category": "Occult Diagram",
+      "url": "https://hermetic.com/crowley/libers/lib777",
+      "mode": "public-html-table",
+      "status": "available",
+      "candidateLimit": 24,
+      "preferredThemeHits": ["correspondence", "symbol", "number", "tree", "planet", "element", "formula"],
+      "safety": {
+        "storeFullText": false,
+        "maxOriginalWords": 24
+      }
+    },
+    {
+      "sourceId": "crowley-equinox-index",
+      "title": "The Equinox index / A∴A∴ libri discovery",
+      "category": "Ritual Fragment",
+      "url": "https://hermetic.com/crowley/equinox/",
+      "mode": "public-html-discovery",
+      "status": "needs-fetch",
+      "candidateLimit": 12,
+      "safety": {
+        "storeFullText": false
+      }
+    },
+    {
+      "sourceId": "austin-osman-spare-book-of-pleasure-reference",
+      "title": "The Book of Pleasure source locator",
+      "category": "Esoteric Formula",
+      "url": "https://en.wikipedia.org/wiki/The_Book_of_Pleasure",
+      "mode": "source-discovery-only",
+      "status": "not-fetched-discovery-only",
+      "candidateLimit": 0,
+      "safety": {
+        "storeFullText": false
+      }
+    },
+    {
+      "sourceId": "chaos-magick-modern-bibliography",
+      "title": "Chaos magick bibliography locator",
+      "category": "Esoteric Formula",
+      "url": "https://en.wikipedia.org/wiki/Chaos_magic",
+      "mode": "source-discovery-only",
+      "status": "not-fetched-discovery-only",
+      "candidateLimit": 0,
+      "safety": {
+        "storeFullText": false
+      }
+    }
+  ]
+}
