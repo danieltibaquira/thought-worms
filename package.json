@@ -7,6 +7,7 @@
     "migrate:live": "node scripts/migrate-live-to-verified.mjs",
     "build:live": "node scripts/build-live-corpus.mjs",
     "consolidate:batches": "node scripts/consolidate-candidate-batches.mjs",
+    "crawl:sources": "node scripts/crawl-public-sources.mjs data/source-crawl-targets.json data/source-crawl-report.json",
     "promote:verified": "node scripts/promote-candidates.mjs all-verified",
     "pipeline:run": "npm run migrate:live && npm run consolidate:batches && npm run promote:verified && npm test"
   },
