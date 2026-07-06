@@ -1,11 +1,11 @@
 [
   {
     "sourceId": "mumonkan-aitken-private-pdf",
-    "status": "ready",
+    "status": "in-progress",
     "coverageUnit": "case",
     "unitsTotal": 48,
-    "unitsReviewed": 0,
-    "candidateCount": 0,
+    "unitsReviewed": 10,
+    "candidateCount": 10,
     "verifiedCount": 0,
     "rejectedCount": 0
   },
