@@ -1,7 +1,7 @@
 # Thought Worms Corpus Report
 
 Verified rows: 80
-Registered sources: 11
+Registered sources: 15
 Candidate rows: 0
 Rejected rows: 0
 
@@ -36,11 +36,15 @@ Rejected rows: 0
 | legacy-curated | Prayers | medium | https://github.com/danieltibaquira/thought-worms |
 | haiku-foundation | Haiku | medium | https://thehaikufoundation.org/ |
 | mumonkan-sacred-texts | Koan | high | https://sacred-texts.com/bud/zen/mumonkan.htm |
+| mumonkan-aitken-private-pdf | Koan | high | https://archive.org/details/gatelessbarrierw0000aitk |
 | ctext-daodejing | Daoist Chapters | high | https://ctext.org/dao-de-jing |
+| daodejing-archangelis-private-pdf | Daoist Chapters | medium | https://ctext.org/dao-de-jing |
 | sefaria-psalms | Psalms | high | https://www.sefaria.org/Psalms |
+| psalms-kjv-fall-river-private-pdf | Psalms | high | https://www.kingjamesbibleonline.org/Psalms-Chapter-1/ |
 | loc-cantares-mexicanos | Cantos | high | https://www.loc.gov/item/2021668058/ |
 | oup-aztec-poets | Cantos | high | https://www.oupress.com/9780806132914/fifteen-poets-of-the-aztec-world/ |
 | sanskrit-docs-rigveda | Hymns | high | https://sanskritdocuments.org/doc_veda/rigveda.html |
 | sacred-texts-upanishads | Mahāvākyas | high | https://sacred-texts.com/hin/sbe15/ |
 | poetryfoundation-rumi | Sufi Poetry | medium | https://www.poetryfoundation.org/poets/jalal-al-din-rumi |
 | poetryfoundation-hafez | Sufi Poetry | medium | https://www.poetryfoundation.org/poets/hafez |
+| hafez-saberi-private-pdf | Sufi Poetry | medium | https://www.poetryfoundation.org/poets/hafez |
