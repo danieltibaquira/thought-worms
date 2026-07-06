@@ -40,10 +40,100 @@
     "rejectedCount": 0
   },
   {
+    "sourceId": "masnavi-whinfield-private-pdf",
+    "status": "batch-001-queued",
+    "coverageUnit": "selected-couplet-or-theme",
+    "unitsTotal": null,
+    "unitsReviewed": 10,
+    "candidateCount": 10,
+    "verifiedCount": 0,
+    "rejectedCount": 0
+  },
+  {
+    "sourceId": "sacred-texts-upanishads",
+    "status": "batch-001-queued",
+    "coverageUnit": "selected-mahavakya",
+    "unitsTotal": null,
+    "unitsReviewed": 10,
+    "candidateCount": 10,
+    "verifiedCount": 0,
+    "rejectedCount": 0
+  },
+  {
+    "sourceId": "popol-wuuj-saravia-guarchaj",
+    "status": "batch-001-queued",
+    "coverageUnit": "selected-canto-fragment",
+    "unitsTotal": null,
+    "unitsReviewed": 10,
+    "candidateCount": 10,
+    "verifiedCount": 0,
+    "rejectedCount": 0
+  },
+  {
+    "sourceId": "japanese-death-poems-hoffmann",
+    "status": "batch-001-queued",
+    "coverageUnit": "selected-jisei-or-haiku",
+    "unitsTotal": null,
+    "unitsReviewed": 10,
+    "candidateCount": 10,
+    "verifiedCount": 0,
+    "rejectedCount": 0
+  },
+  {
+    "sourceId": "greek-anthology-paton-v",
+    "status": "batch-001-queued",
+    "coverageUnit": "selected-epigram",
+    "unitsTotal": null,
+    "unitsReviewed": 8,
+    "candidateCount": 8,
+    "verifiedCount": 0,
+    "rejectedCount": 0
+  },
+  {
     "sourceId": "hafez-saberi-private-pdf",
     "status": "deferred-ocr-required",
     "coverageUnit": "ghazal",
     "unitsTotal": null,
+    "unitsReviewed": 0,
+    "candidateCount": 0,
+    "verifiedCount": 0,
+    "rejectedCount": 0
+  },
+  {
+    "sourceId": "loc-cantares-mexicanos",
+    "status": "deferred-ocr-required",
+    "coverageUnit": "canto",
+    "unitsTotal": null,
+    "unitsReviewed": 0,
+    "candidateCount": 0,
+    "verifiedCount": 0,
+    "rejectedCount": 0
+  },
+  {
+    "sourceId": "voices-porchia-private-pdf",
+    "status": "deferred-ocr-required-unregistered",
+    "coverageUnit": "aphorism",
+    "unitsTotal": null,
+    "unitsReviewed": 0,
+    "candidateCount": 0,
+    "verifiedCount": 0,
+    "rejectedCount": 0
+  },
+  {
+    "sourceId": "zhuangzi-fraser-private-pdf",
+    "status": "deferred-modern-commentary-not-primary-source",
+    "coverageUnit": "chapter",
+    "unitsTotal": 8,
+    "unitsReviewed": 0,
+    "candidateCount": 0,
+    "verifiedCount": 0,
+    "rejectedCount": 0
+  },
+  {
+    "sourceId": "blue-cliff-rothenberg-private-pdf",
+    "status": "deferred-modern-poetic-rewrite",
+    "coverageUnit": "case",
+    "unitsTotal": 100,
     "unitsReviewed": 0,
     "candidateCount": 0,
     "verifiedCount": 0,
