@@ -11,11 +11,11 @@
   },
   {
     "sourceId": "psalms-kjv-fall-river-private-pdf",
-    "status": "ready",
-    "coverageUnit": "psalm",
+    "status": "batch-001-queued",
+    "coverageUnit": "verse-candidate",
     "unitsTotal": 150,
-    "unitsReviewed": 0,
-    "candidateCount": 0,
+    "unitsReviewed": 41,
+    "candidateCount": 41,
     "verifiedCount": 0,
     "rejectedCount": 0
   },
