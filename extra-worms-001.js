@@ -798,5 +798,105 @@ window.THOUGHT_WORMS = [
     "recommendedEditionSource": "Poetry Foundation — Hafez",
     "sourceUrl": "https://www.poetryfoundation.org/poets/hafez",
     "notes": "Persian ghazal tradition; compact working rendering."
+  },
+  {
+    "category": "Koan",
+    "artifact": "Mumonkan 1 — Chao-chou's Dog",
+    "original": "Case 1: a monk asks whether a dog has Buddha nature; Chao-chou answers Mu.",
+    "english": "The question wants doctrine; the answer gives a single syllable to inhabit.",
+    "spanish": "La pregunta busca doctrina; la respuesta entrega una sola sílaba para habitar.",
+    "recommendedEditionSource": "Robert Aitken — The Gateless Barrier, Case 1",
+    "sourceUrl": "https://archive.org/details/gatelessbarrierw0000aitk",
+    "notes": "Mode A extraction from Aitken PDF, pp. 7-18. Short working rendering; source case centers on Chao-chou's Mu. Copyright-gated: avoid long commentary excerpts."
+  },
+  {
+    "category": "Koan",
+    "artifact": "Mumonkan 2 — Pai-chang's Fox",
+    "original": "Case 2: not falling under cause and effect; not evading cause and effect.",
+    "english": "Freedom is not escape from consequence; it is intimacy with consequence.",
+    "spanish": "La libertad no es escapar de la consecuencia; es intimidad con la consecuencia.",
+    "recommendedEditionSource": "Robert Aitken — The Gateless Barrier, Case 2",
+    "sourceUrl": "https://archive.org/details/gatelessbarrierw0000aitk",
+    "notes": "Mode A extraction from Aitken PDF, pp. 19-27. Candidate derived from the old Pai-chang fox koan and Wu-men's falling/evading contrast."
+  },
+  {
+    "category": "Koan",
+    "artifact": "Mumonkan 3 — Chü-chih Raises One Finger",
+    "original": "Case 3: whenever asked, Chü-chih raises one finger.",
+    "english": "One gesture can hold a life, but the gesture is not the life.",
+    "spanish": "Un gesto puede sostener una vida, pero el gesto no es la vida.",
+    "recommendedEditionSource": "Robert Aitken — The Gateless Barrier, Case 3",
+    "sourceUrl": "https://archive.org/details/gatelessbarrierw0000aitk",
+    "notes": "Mode A extraction from Aitken PDF, pp. 28-32. Candidate focuses on the one-finger presentation and Wu-men's warning that realization is not the finger."
+  },
+  {
+    "category": "Koan",
+    "artifact": "Mumonkan 4 — Huo-an's Beardless Barbarian",
+    "original": "Case 4: why has the Western Barbarian no beard?",
+    "english": "The why is not a request for an answer; it is the bell itself ringing.",
+    "spanish": "El porqué no pide una respuesta; es la campana misma sonando.",
+    "recommendedEditionSource": "Robert Aitken — The Gateless Barrier, Case 4",
+    "sourceUrl": "https://archive.org/details/gatelessbarrierw0000aitk",
+    "notes": "Mode A extraction from Aitken PDF, pp. 33-37. Candidate draws from Huo-an's question and Aitken's emphasis on staying with the why."
+  },
+  {
+    "category": "Koan",
+    "artifact": "Mumonkan 5 — Hsiang-yen: Up a Tree",
+    "original": "Case 5: hanging from a tree by the teeth, asked the meaning of Bodhidharma's coming.",
+    "english": "Where speech loses life and silence evades duty, the whole body must answer.",
+    "spanish": "Donde hablar pierde la vida y callar evade el deber, responde el cuerpo entero.",
+    "recommendedEditionSource": "Robert Aitken — The Gateless Barrier, Case 5",
+    "sourceUrl": "https://archive.org/details/gatelessbarrierw0000aitk",
+    "notes": "Mode A extraction from Aitken PDF, pp. 38-45. Candidate compresses the dilemma without reproducing the full case."
+  },
+  {
+    "category": "Koan",
+    "artifact": "Mumonkan 6 — The World-Honored One Twirls a Flower",
+    "original": "Case 6: the Buddha twirls a flower; Mahākāśyapa smiles.",
+    "english": "The teaching appears before speech, and one face cannot help but open.",
+    "spanish": "La enseñanza aparece antes del habla, y un rostro no puede evitar abrirse.",
+    "recommendedEditionSource": "Robert Aitken — The Gateless Barrier, Case 6",
+    "sourceUrl": "https://archive.org/details/gatelessbarrierw0000aitk",
+    "notes": "Mode A extraction from Aitken PDF, pp. 46-53. Candidate centers on silent presentation and recognition."
+  },
+  {
+    "category": "Koan",
+    "artifact": "Mumonkan 7 — Chao-chou: Wash Your Bowl",
+    "original": "Case 7: after eating rice gruel, wash your bowl.",
+    "english": "The meal is finished; the Way is exactly the next ordinary act.",
+    "spanish": "La comida terminó; el Camino es exactamente el siguiente acto ordinario.",
+    "recommendedEditionSource": "Robert Aitken — The Gateless Barrier, Case 7",
+    "sourceUrl": "https://archive.org/details/gatelessbarrierw0000aitk",
+    "notes": "Mode A extraction from Aitken PDF, pp. 54-59. Candidate grounded in Chao-chou's rice gruel dialogue and Wu-men's clarity verse."
+  },
+  {
+    "category": "Koan",
+    "artifact": "Mumonkan 8 — Hsi-chung Builds Carts",
+    "original": "Case 8: when cart wheels are removed, what is clarified?",
+    "english": "Take away the working parts and the name of the vehicle begins to tremble.",
+    "spanish": "Quita las partes que funcionan y el nombre del vehículo empieza a temblar.",
+    "recommendedEditionSource": "Robert Aitken — The Gateless Barrier, Case 8",
+    "sourceUrl": "https://archive.org/details/gatelessbarrierw0000aitk",
+    "notes": "Mode A extraction from Aitken PDF, pp. 60-63 plus TOC. Candidate is a conservative working rendering; Case 8 needs later comparison against a public-domain Mumonkan translation before promotion to final corpus."
+  },
+  {
+    "category": "Koan",
+    "artifact": "Mumonkan 9 — Ch'ing-jang's Nonattained Buddha",
+    "original": "Case 9: a Buddha sits for ten kalpas and still does not attain Buddhahood.",
+    "english": "Practice does not manufacture Buddha; it exposes the error of attaining one.",
+    "spanish": "La práctica no fabrica al Buda; expone el error de alcanzarlo.",
+    "recommendedEditionSource": "Robert Aitken — The Gateless Barrier, Case 9",
+    "sourceUrl": "https://archive.org/details/gatelessbarrierw0000aitk",
+    "notes": "Mode A extraction from Aitken PDF, pp. 64-69. Candidate based on the nonattained Buddha exchange and Wu-men's realization/understanding contrast."
+  },
+  {
+    "category": "Koan",
+    "artifact": "Mumonkan 10 — Ch'ing-shui: Solitary and Destitute",
+    "original": "Case 10: Ch'ing-shui asks for alms while already full of the finest wine.",
+    "english": "The one who comes empty-handed has already tasted what cannot be shown.",
+    "spanish": "Quien llega con las manos vacías ya probó aquello que no puede mostrarse.",
+    "recommendedEditionSource": "Robert Aitken — The Gateless Barrier, Case 10",
+    "sourceUrl": "https://archive.org/details/gatelessbarrierw0000aitk",
+    "notes": "Mode A extraction from Aitken PDF, pp. 70-75. Candidate uses short working rendering; avoids copying full case or commentary."
   }
 ];

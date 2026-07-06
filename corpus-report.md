@@ -1,6 +1,6 @@
 # Thought Worms Corpus Report
 
-Verified rows: 80
+Verified rows: 90
 Registered sources: 15
 Candidate rows: 0
 Rejected rows: 0
@@ -16,7 +16,7 @@ Rejected rows: 0
 | Geometric Figure | 5 |
 | Haiku | 10 |
 | Hymns | 5 |
-| Koan | 8 |
+| Koan | 18 |
 | Mahāvākyas | 4 |
 | Mathematical Object | 5 |
 | Musical Gesture | 5 |
