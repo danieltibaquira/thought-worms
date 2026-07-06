@@ -30,6 +30,16 @@
     "rejectedCount": 0
   },
   {
+    "sourceId": "desert-fathers-ward",
+    "status": "batch-001-queued",
+    "coverageUnit": "saying",
+    "unitsTotal": null,
+    "unitsReviewed": 10,
+    "candidateCount": 10,
+    "verifiedCount": 0,
+    "rejectedCount": 0
+  },
+  {
     "sourceId": "hafez-saberi-private-pdf",
     "status": "deferred-ocr-required",
     "coverageUnit": "ghazal",
