@@ -1,0 +1,17 @@
+[
+  {
+    "sourceId": "desert-fathers-ward",
+    "localPath": "private-sources/desert-fathers-ward.pdf",
+    "notes": "Example only. Use data/source-files.local.json for real private paths; do not commit PDFs."
+  },
+  {
+    "sourceId": "greek-anthology-paton",
+    "localPath": "private-sources/greek-anthology-paton.pdf",
+    "notes": "Example only."
+  },
+  {
+    "sourceId": "japanese-death-poems-hoffmann",
+    "localPath": "private-sources/japanese-death-poems-hoffmann.pdf",
+    "notes": "Example only."
+  }
+]
