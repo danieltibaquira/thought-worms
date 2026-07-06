@@ -1,107 +1,202 @@
 [
   {
+    "sourceId": "haiku-foundation",
+    "lane": "public-web",
+    "category": "Haiku",
+    "url": "https://thehaikufoundation.org/",
+    "title": "Haiku Foundation resources",
+    "priority": "medium",
+    "extract": { "kind": "source-discovery", "candidateLimit": 20, "preferredThemes": ["season", "water", "tree", "moon", "silence"] },
+    "safety": { "storeFullText": false, "maxOriginalWords": 24 }
+  },
+  {
+    "sourceId": "mumonkan-sacred-texts",
+    "lane": "complete-public-cross-check",
+    "category": "Koan",
+    "url": "https://sacred-texts.com/bud/zen/mumonkan.htm",
+    "title": "The Gateless Gate public witness",
+    "priority": "high",
+    "extract": { "kind": "complete-cross-check", "candidateLimit": 0, "preferredThemes": ["void", "attention", "ordinary act"] },
+    "safety": { "storeFullText": false }
+  },
+  {
+    "sourceId": "ctext-daodejing",
+    "lane": "complete-public-cross-check",
+    "category": "Daoist Chapters",
+    "url": "https://ctext.org/dao-de-jing",
+    "title": "Dao De Jing canonical Chinese witness",
+    "priority": "high",
+    "extract": { "kind": "complete-cross-check", "candidateLimit": 0, "preferredThemes": ["returning", "non-action", "void", "water"] },
+    "safety": { "storeFullText": false }
+  },
+  {
+    "sourceId": "sefaria-psalms",
+    "lane": "public-web",
+    "category": "Psalms",
+    "url": "https://www.sefaria.org/Psalms",
+    "title": "Psalms canonical public reference",
+    "priority": "high",
+    "extract": { "kind": "verse-selection", "candidateLimit": 60, "preferredThemes": ["prayer", "water", "light", "death", "tree", "time"] },
+    "safety": { "storeFullText": false, "maxOriginalWords": 24 }
+  },
+  {
+    "sourceId": "psalms-kjv-fall-river-private-pdf",
+    "lane": "public-cross-check",
+    "category": "Psalms",
+    "url": "https://www.kingjamesbibleonline.org/Psalms-Chapter-1/",
+    "title": "KJV Psalms public witness",
+    "priority": "high",
+    "extract": { "kind": "cross-check-only", "candidateLimit": 0, "preferredThemes": ["prayer", "wisdom", "light"] },
+    "safety": { "storeFullText": false }
+  },
+  {
+    "sourceId": "desert-fathers-ward",
+    "lane": "complete-selected",
+    "category": "Desert Sayings",
+    "url": "https://ldysinger.com/@texts/0400_apophth/greek_alph/00a_start.htm",
+    "title": "Desert Fathers selected sayings",
+    "priority": "high",
+    "extract": { "kind": "complete-selected", "candidateLimit": 0, "preferredThemes": ["silence", "prayer", "attention", "body"] },
+    "safety": { "storeFullText": false }
+  },
+  {
+    "sourceId": "popol-wuuj-saravia-guarchaj",
+    "lane": "digitized-manual-review",
+    "category": "Cantos",
+    "url": "https://archive.org/details/isbn_9789992212172",
+    "title": "Popol Wuuj digitized witness",
+    "priority": "high",
+    "extract": { "kind": "manual-selection", "candidateLimit": 20, "preferredThemes": ["creation", "earth", "speech", "light"] },
+    "safety": { "storeFullText": false, "maxOriginalWords": 24 }
+  },
+  {
+    "sourceId": "loc-cantares-mexicanos",
+    "lane": "deferred-ocr",
+    "category": "Cantos",
+    "url": "https://www.loc.gov/item/2021668058/",
+    "title": "Cantares Mexicanos archival witness",
+    "priority": "high",
+    "extract": { "kind": "ocr-required", "candidateLimit": 0, "preferredThemes": ["song", "flower", "death"] },
+    "safety": { "storeFullText": false }
+  },
+  {
+    "sourceId": "sanskrit-docs-rigveda",
+    "lane": "public-web",
+    "category": "Hymns",
+    "url": "https://sanskritdocuments.org/doc_veda/rigveda.html",
+    "title": "Rigveda public Sanskrit witness",
+    "priority": "high",
+    "extract": { "kind": "hymn-fragment-selection", "candidateLimit": 40, "preferredThemes": ["fire", "light", "water", "song", "prayer"] },
+    "safety": { "storeFullText": false, "maxOriginalWords": 24 }
+  },
+  {
+    "sourceId": "sacred-texts-upanishads",
+    "lane": "public-web",
+    "category": "Mahāvākyas",
+    "url": "https://sacred-texts.com/hin/sbe15/",
+    "title": "Upanishads public witness",
+    "priority": "high",
+    "extract": { "kind": "mahavakya-selection", "candidateLimit": 30, "preferredThemes": ["self", "void", "light", "wisdom", "breath"] },
+    "safety": { "storeFullText": false, "maxOriginalWords": 24 }
+  },
+  {
+    "sourceId": "masnavi-whinfield-private-pdf",
+    "lane": "public-web",
+    "category": "Sufi Poetry",
+    "url": "https://sacred-texts.com/isl/masnavi/",
+    "title": "Masnavi Whinfield public witness",
+    "priority": "high",
+    "extract": { "kind": "couplet-theme-selection", "candidateLimit": 50, "preferredThemes": ["love", "music", "fire", "returning", "void"] },
+    "safety": { "storeFullText": false, "maxOriginalWords": 24 }
+  },
+  {
+    "sourceId": "hafez-saberi-private-pdf",
+    "lane": "deferred-ocr",
+    "category": "Sufi Poetry",
+    "url": "https://www.poetryfoundation.org/poets/hafez",
+    "title": "Hafez modern translation witness",
+    "priority": "medium",
+    "extract": { "kind": "ocr-required", "candidateLimit": 0, "preferredThemes": ["love", "wine", "beloved"] },
+    "safety": { "storeFullText": false }
+  },
+  {
+    "sourceId": "greek-anthology-paton-v",
+    "lane": "public-domain-digitized",
+    "category": "Epitaphs",
+    "url": "https://archive.org/details/greekanthology05pato",
+    "title": "Greek Anthology Paton volume V",
+    "priority": "medium",
+    "extract": { "kind": "epigram-selection", "candidateLimit": 40, "preferredThemes": ["death", "time", "stone", "sea"] },
+    "safety": { "storeFullText": false, "maxOriginalWords": 24 }
+  },
+  {
+    "sourceId": "japanese-death-poems-hoffmann",
+    "lane": "digitized-manual-review-copyrighted",
+    "category": "Zen Death Poems (Jisei)",
+    "url": "https://archive.org/details/japanesedeathpoe0000unse",
+    "title": "Japanese Death Poems compiled by Hoffmann",
+    "priority": "medium",
+    "extract": { "kind": "jisei-selection", "candidateLimit": 20, "preferredThemes": ["death", "moon", "water", "time"] },
+    "safety": { "storeFullText": false, "maxOriginalWords": 18 }
+  },
+  {
     "sourceId": "crowley-liber-al-oto",
-    "mode": "public-html-text",
+    "lane": "public-web",
     "category": "Esoteric Formula",
     "url": "https://lib.oto-usa.org/libri/liber0220.html",
-    "title": "Liber AL vel Legis — O.T.O. public library witness",
+    "title": "Liber AL vel Legis public witness",
     "priority": "high",
-    "extract": {
-      "kind": "numbered-verses",
-      "candidateLimit": 36,
-      "chapterMarkers": ["Chapter I", "Chapter II", "Chapter III"],
-      "preferredThemes": ["will", "love", "star", "law", "void", "light", "ecstasy", "ritual", "formula"]
-    },
-    "safety": {
-      "storeFullText": false,
-      "maxOriginalWords": 18,
-      "notes": "Prefer short verse-level fragments and working renderings. Avoid long excerpts even where public web text is available."
-    }
+    "extract": { "kind": "numbered-verse-selection", "candidateLimit": 36, "preferredThemes": ["will", "love", "star", "law", "void", "light", "formula"] },
+    "safety": { "storeFullText": false, "maxOriginalWords": 18 }
   },
   {
     "sourceId": "crowley-liber-al-hermetic",
-    "mode": "public-html-cross-check",
+    "lane": "public-cross-check",
     "category": "Esoteric Formula",
     "url": "https://hermetic.com/crowley/libers/lib220",
-    "title": "Liber AL vel Legis — Hermetic Library witness",
+    "title": "Liber AL Hermetic Library witness",
     "priority": "high",
-    "extract": {
-      "kind": "cross-check-only",
-      "candidateLimit": 0,
-      "preferredThemes": ["will", "love", "law", "star", "void"]
-    },
-    "safety": {
-      "storeFullText": false,
-      "notes": "Use as a second public witness for Liber AL, not as a duplicate candidate source."
-    }
+    "extract": { "kind": "cross-check-only", "candidateLimit": 0, "preferredThemes": ["will", "law", "star"] },
+    "safety": { "storeFullText": false }
   },
   {
     "sourceId": "crowley-liber-777-hermetic",
-    "mode": "public-html-table",
+    "lane": "public-web-table",
     "category": "Occult Diagram",
     "url": "https://hermetic.com/crowley/libers/lib777",
-    "title": "Liber 777 correspondence tables — Hermetic Library witness",
+    "title": "Liber 777 correspondence tables",
     "priority": "high",
-    "extract": {
-      "kind": "table-correspondence",
-      "candidateLimit": 24,
-      "preferredThemes": ["correspondence", "symbol", "number", "tree", "planet", "element", "formula"]
-    },
-    "safety": {
-      "storeFullText": false,
-      "maxOriginalWords": 24,
-      "notes": "Treat table rows as occult diagrams/correspondence artifacts; avoid dumping entire tables into the repository."
-    }
+    "extract": { "kind": "table-correspondence-selection", "candidateLimit": 24, "preferredThemes": ["correspondence", "symbol", "number", "tree", "planet", "element"] },
+    "safety": { "storeFullText": false, "maxOriginalWords": 24 }
   },
   {
     "sourceId": "crowley-equinox-index",
-    "mode": "public-html-discovery",
+    "lane": "public-web-discovery",
     "category": "Ritual Fragment",
     "url": "https://hermetic.com/crowley/equinox/",
-    "title": "The Equinox index / A∴A∴ libri discovery",
+    "title": "Equinox and libri index discovery",
     "priority": "medium",
-    "extract": {
-      "kind": "link-discovery",
-      "candidateLimit": 12,
-      "preferredThemes": ["ritual", "formula", "will", "silence", "attention", "initiation"]
-    },
-    "safety": {
-      "storeFullText": false,
-      "notes": "Discovery target only until specific public-text pages are selected."
-    }
+    "extract": { "kind": "specific-target-discovery", "candidateLimit": 20, "preferredThemes": ["will", "symbol", "formula"] },
+    "safety": { "storeFullText": false, "maxOriginalWords": 18 }
   },
   {
     "sourceId": "austin-osman-spare-book-of-pleasure-reference",
-    "mode": "source-discovery-only",
+    "lane": "source-discovery-only",
     "category": "Esoteric Formula",
     "url": "https://en.wikipedia.org/wiki/The_Book_of_Pleasure",
-    "title": "The Book of Pleasure source locator",
+    "title": "Austin Osman Spare source locator",
     "priority": "medium",
-    "extract": {
-      "kind": "bibliographic-discovery",
-      "candidateLimit": 0,
-      "preferredThemes": ["sigil", "desire", "belief", "subconscious", "ecstasy"]
-    },
-    "safety": {
-      "storeFullText": false,
-      "notes": "Do not queue until a lawful digitized text witness is located and reviewed."
-    }
+    "extract": { "kind": "lawful-text-needed", "candidateLimit": 0, "preferredThemes": ["desire", "symbol", "sigil"] },
+    "safety": { "storeFullText": false }
   },
   {
     "sourceId": "chaos-magick-modern-bibliography",
-    "mode": "source-discovery-only",
+    "lane": "bibliography-only-modern-copyright",
     "category": "Esoteric Formula",
     "url": "https://en.wikipedia.org/wiki/Chaos_magic",
-    "title": "Chaos magick bibliography locator",
+    "title": "Modern chaos practice bibliography",
     "priority": "medium",
-    "extract": {
-      "kind": "bibliographic-discovery",
-      "candidateLimit": 0,
-      "preferredThemes": ["belief", "gnosis", "sigil", "deconditioning", "paradigm", "desire"]
-    },
-    "safety": {
-      "storeFullText": false,
-      "notes": "Modern chaos magick sources are mostly copyrighted. Store source metadata and conceptual leads only, not excerpts."
-    }
+    "extract": { "kind": "bibliographic-concepts-only", "candidateLimit": 0, "preferredThemes": ["belief", "symbol", "deconditioning"] },
+    "safety": { "storeFullText": false }
   }
 ]
