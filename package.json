@@ -6,8 +6,9 @@
     "report": "node scripts/review-report.mjs",
     "migrate:live": "node scripts/migrate-live-to-verified.mjs",
     "build:live": "node scripts/build-live-corpus.mjs",
+    "consolidate:batches": "node scripts/consolidate-candidate-batches.mjs",
     "promote:verified": "node scripts/promote-candidates.mjs all-verified",
-    "pipeline:run": "npm run migrate:live && npm run promote:verified && npm test"
+    "pipeline:run": "npm run migrate:live && npm run consolidate:batches && npm run promote:verified && npm test"
   },
   "devDependencies": {}
 }
