@@ -6,6 +6,7 @@ on:
     branches: [main]
     paths:
       - 'data/artifacts.candidates.json'
+      - 'data/candidate-batches/**'
       - 'data/sources.json'
       - 'scripts/**'
       - '.github/workflows/pipeline.yml'
@@ -29,6 +30,9 @@ jobs:
 
       - name: Migrate live corpus into verified store
         run: npm run migrate:live
+
+      - name: Consolidate queued candidate batches
+        run: npm run consolidate:batches
 
       - name: Promote verified candidates
         run: npm run promote:verified
