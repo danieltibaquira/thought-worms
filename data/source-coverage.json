@@ -31,11 +31,11 @@
   },
   {
     "sourceId": "desert-fathers-ward",
-    "status": "batch-001-queued",
+    "status": "batch-002-queued",
     "coverageUnit": "saying",
     "unitsTotal": null,
-    "unitsReviewed": 10,
-    "candidateCount": 10,
+    "unitsReviewed": 22,
+    "candidateCount": 22,
     "verifiedCount": 0,
     "rejectedCount": 0
   },
