@@ -21,17 +21,17 @@
   },
   {
     "sourceId": "daodejing-archangelis-private-pdf",
-    "status": "batch-001-queued-comparative-only",
+    "status": "queued-for-validation-comparative-only",
     "coverageUnit": "chapter",
     "unitsTotal": 81,
-    "unitsReviewed": 20,
-    "candidateCount": 20,
+    "unitsReviewed": 81,
+    "candidateCount": 81,
     "verifiedCount": 0,
     "rejectedCount": 0
   },
   {
     "sourceId": "hafez-saberi-private-pdf",
-    "status": "ready-needs-ocr-review",
+    "status": "deferred-ocr-required",
     "coverageUnit": "ghazal",
     "unitsTotal": null,
     "unitsReviewed": 0,
