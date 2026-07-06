@@ -1,0 +1,107 @@
+[
+  {
+    "sourceId": "crowley-liber-al-oto",
+    "mode": "public-html-text",
+    "category": "Esoteric Formula",
+    "url": "https://lib.oto-usa.org/libri/liber0220.html",
+    "title": "Liber AL vel Legis — O.T.O. public library witness",
+    "priority": "high",
+    "extract": {
+      "kind": "numbered-verses",
+      "candidateLimit": 36,
+      "chapterMarkers": ["Chapter I", "Chapter II", "Chapter III"],
+      "preferredThemes": ["will", "love", "star", "law", "void", "light", "ecstasy", "ritual", "formula"]
+    },
+    "safety": {
+      "storeFullText": false,
+      "maxOriginalWords": 18,
+      "notes": "Prefer short verse-level fragments and working renderings. Avoid long excerpts even where public web text is available."
+    }
+  },
+  {
+    "sourceId": "crowley-liber-al-hermetic",
+    "mode": "public-html-cross-check",
+    "category": "Esoteric Formula",
+    "url": "https://hermetic.com/crowley/libers/lib220",
+    "title": "Liber AL vel Legis — Hermetic Library witness",
+    "priority": "high",
+    "extract": {
+      "kind": "cross-check-only",
+      "candidateLimit": 0,
+      "preferredThemes": ["will", "love", "law", "star", "void"]
+    },
+    "safety": {
+      "storeFullText": false,
+      "notes": "Use as a second public witness for Liber AL, not as a duplicate candidate source."
+    }
+  },
+  {
+    "sourceId": "crowley-liber-777-hermetic",
+    "mode": "public-html-table",
+    "category": "Occult Diagram",
+    "url": "https://hermetic.com/crowley/libers/lib777",
+    "title": "Liber 777 correspondence tables — Hermetic Library witness",
+    "priority": "high",
+    "extract": {
+      "kind": "table-correspondence",
+      "candidateLimit": 24,
+      "preferredThemes": ["correspondence", "symbol", "number", "tree", "planet", "element", "formula"]
+    },
+    "safety": {
+      "storeFullText": false,
+      "maxOriginalWords": 24,
+      "notes": "Treat table rows as occult diagrams/correspondence artifacts; avoid dumping entire tables into the repository."
+    }
+  },
+  {
+    "sourceId": "crowley-equinox-index",
+    "mode": "public-html-discovery",
+    "category": "Ritual Fragment",
+    "url": "https://hermetic.com/crowley/equinox/",
+    "title": "The Equinox index / A∴A∴ libri discovery",
+    "priority": "medium",
+    "extract": {
+      "kind": "link-discovery",
+      "candidateLimit": 12,
+      "preferredThemes": ["ritual", "formula", "will", "silence", "attention", "initiation"]
+    },
+    "safety": {
+      "storeFullText": false,
+      "notes": "Discovery target only until specific public-text pages are selected."
+    }
+  },
+  {
+    "sourceId": "austin-osman-spare-book-of-pleasure-reference",
+    "mode": "source-discovery-only",
+    "category": "Esoteric Formula",
+    "url": "https://en.wikipedia.org/wiki/The_Book_of_Pleasure",
+    "title": "The Book of Pleasure source locator",
+    "priority": "medium",
+    "extract": {
+      "kind": "bibliographic-discovery",
+      "candidateLimit": 0,
+      "preferredThemes": ["sigil", "desire", "belief", "subconscious", "ecstasy"]
+    },
+    "safety": {
+      "storeFullText": false,
+      "notes": "Do not queue until a lawful digitized text witness is located and reviewed."
+    }
+  },
+  {
+    "sourceId": "chaos-magick-modern-bibliography",
+    "mode": "source-discovery-only",
+    "category": "Esoteric Formula",
+    "url": "https://en.wikipedia.org/wiki/Chaos_magic",
+    "title": "Chaos magick bibliography locator",
+    "priority": "medium",
+    "extract": {
+      "kind": "bibliographic-discovery",
+      "candidateLimit": 0,
+      "preferredThemes": ["belief", "gnosis", "sigil", "deconditioning", "paradigm", "desire"]
+    },
+    "safety": {
+      "storeFullText": false,
+      "notes": "Modern chaos magick sources are mostly copyrighted. Store source metadata and conceptual leads only, not excerpts."
+    }
+  }
+]
