@@ -1,0 +1,42 @@
+[
+  {
+    "sourceId": "mumonkan-aitken-private-pdf",
+    "status": "ready",
+    "coverageUnit": "case",
+    "unitsTotal": 48,
+    "unitsReviewed": 0,
+    "candidateCount": 0,
+    "verifiedCount": 0,
+    "rejectedCount": 0
+  },
+  {
+    "sourceId": "psalms-kjv-fall-river-private-pdf",
+    "status": "ready",
+    "coverageUnit": "psalm",
+    "unitsTotal": 150,
+    "unitsReviewed": 0,
+    "candidateCount": 0,
+    "verifiedCount": 0,
+    "rejectedCount": 0
+  },
+  {
+    "sourceId": "daodejing-archangelis-private-pdf",
+    "status": "ready-comparative-only",
+    "coverageUnit": "chapter",
+    "unitsTotal": 81,
+    "unitsReviewed": 0,
+    "candidateCount": 0,
+    "verifiedCount": 0,
+    "rejectedCount": 0
+  },
+  {
+    "sourceId": "hafez-saberi-private-pdf",
+    "status": "ready-needs-ocr-review",
+    "coverageUnit": "ghazal",
+    "unitsTotal": null,
+    "unitsReviewed": 0,
+    "candidateCount": 0,
+    "verifiedCount": 0,
+    "rejectedCount": 0
+  }
+]
