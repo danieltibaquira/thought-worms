@@ -1,0 +1,11 @@
+# Private or copyrighted source files
+sources/**/*.pdf
+sources/**/*.epub
+sources/**/*.mobi
+private-sources/**
+data/source-files.local.json
+
+# Local extraction output
+.cache/
+.tmp/
+ocr-output/
