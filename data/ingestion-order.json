@@ -1,0 +1,167 @@
+[
+  {
+    "order": 1,
+    "sourceId": "mumonkan-aitken-private-pdf",
+    "title": "The Gateless Barrier: The Wu-Men Kuan (Mumonkan)",
+    "category": "Koan",
+    "mode": "mode-a-chat-review",
+    "strategy": "case-by-case extraction; use case title, core case, Wu-men verse, and avoid long commentary excerpts",
+    "targetInitialBatch": 48,
+    "whyNow": "Clean table of 48 cases, good OCR, each case is already artifact-shaped.",
+    "copyrightRisk": "medium-high; use short excerpts and working renderings only"
+  },
+  {
+    "order": 2,
+    "sourceId": "sefaria-psalms",
+    "title": "Psalms canonical source",
+    "category": "Psalms",
+    "mode": "manual-public-reference",
+    "strategy": "extract short Hebrew/English/Spanish verse-level artifacts from canonical public references",
+    "targetInitialBatch": 50,
+    "whyNow": "150 psalms, highly compact verse units, public canonical anchors available.",
+    "copyrightRisk": "low when using public-domain / open references"
+  },
+  {
+    "order": 3,
+    "sourceId": "psalms-kjv-fall-river-private-pdf",
+    "title": "The Book of Psalms, KJV Fall River Press edition",
+    "category": "Psalms",
+    "mode": "mode-a-chat-review",
+    "strategy": "use as local reading witness for KJV phrasing; source artifacts to public KJV/Hebrew references before promotion",
+    "targetInitialBatch": 25,
+    "whyNow": "Good OCR and obvious verse boundaries; useful for fast candidate selection.",
+    "copyrightRisk": "low-medium; KJV text public domain, but edition design is copyrighted"
+  },
+  {
+    "order": 4,
+    "sourceId": "ctext-daodejing",
+    "title": "Dao De Jing canonical Chinese source",
+    "category": "Daoist Chapters",
+    "mode": "manual-public-reference",
+    "strategy": "chapter-by-chapter extraction from Chinese text; pair with short working English/Spanish renderings",
+    "targetInitialBatch": 81,
+    "whyNow": "81 compact chapters; stable public Chinese reference.",
+    "copyrightRisk": "low when translations are working renderings"
+  },
+  {
+    "order": 5,
+    "sourceId": "daodejing-archangelis-private-pdf",
+    "title": "Dao De Jing: Ancient Immortal's Theory of Everything",
+    "category": "Daoist Chapters",
+    "mode": "mode-a-chat-review",
+    "strategy": "use as local comparative witness only; prefer original Chinese and independent working renderings for promoted rows",
+    "targetInitialBatch": 20,
+    "whyNow": "Good OCR and line-by-line Chinese/English structure, but modern copyrighted interpretation is idiosyncratic.",
+    "copyrightRisk": "high; do not promote long translated passages from this edition"
+  },
+  {
+    "order": 6,
+    "sourceId": "desert-fathers-ward",
+    "title": "The Sayings of the Desert Fathers",
+    "category": "Desert Sayings",
+    "mode": "mode-a-chat-review",
+    "strategy": "numbered saying extraction; one apophthegm per candidate; short Spanish working rendering",
+    "targetInitialBatch": 50,
+    "whyNow": "Extremely clean unit structure and high contemplative density.",
+    "copyrightRisk": "medium; use short excerpts and page locators"
+  },
+  {
+    "order": 7,
+    "sourceId": "popol-wuuj-saravia-guarchaj",
+    "title": "Poopol Wuuj / Popol Vuh",
+    "category": "Cantos",
+    "mode": "mode-a-chat-review",
+    "strategy": "bilingual K'ichee'-Spanish paired extraction; English as working rendering only",
+    "targetInitialBatch": 40,
+    "whyNow": "Strong Americas source; bilingual page structure is ideal for original/Spanish columns.",
+    "copyrightRisk": "medium; use short fragments with page locators"
+  },
+  {
+    "order": 8,
+    "sourceId": "japanese-death-poems-hoffmann",
+    "title": "Japanese Death Poems",
+    "category": "Zen Death Poems (Jisei)",
+    "mode": "mode-a-chat-review",
+    "strategy": "poem-by-poem extraction; original if available; preserve poet and page locator",
+    "targetInitialBatch": 40,
+    "whyNow": "Already artifact-shaped and highly concise.",
+    "copyrightRisk": "high; very short excerpts only"
+  },
+  {
+    "order": 9,
+    "sourceId": "masnavi-whinfield",
+    "title": "Masnavi i Ma'navi / Teachings of Rumi, Whinfield",
+    "category": "Sufi Poetry",
+    "mode": "mode-a-chat-review",
+    "strategy": "extract short couplets only; reject narrative summaries unless they compress into a single contemplative pivot",
+    "targetInitialBatch": 50,
+    "whyNow": "Public-domain translation and good OCR; high yield if constrained to couplets.",
+    "copyrightRisk": "low for translation text; avoid layout reuse"
+  },
+  {
+    "order": 10,
+    "sourceId": "hafez-saberi-private-pdf",
+    "title": "The Poems of Hafez, Reza Saberi translation",
+    "category": "Sufi Poetry",
+    "mode": "mode-a-chat-review",
+    "strategy": "ghazal-by-ghazal candidate selection; prefer one or two short couplets per ghazal; add Persian original only from reliable public Persian source before verification",
+    "targetInitialBatch": 25,
+    "whyNow": "Strong poetic density but image-only/OCR-poor and copyrighted; better after the cleaner Sufi source proves the flow.",
+    "copyrightRisk": "high; sparse excerpting, strong provenance, review required"
+  },
+  {
+    "order": 11,
+    "sourceId": "greek-anthology-paton",
+    "title": "Greek Anthology",
+    "category": "Epitaphs",
+    "mode": "mode-a-chat-review",
+    "strategy": "extract epitaphs and short votive/admonitory epigrams only; reject ornamental long pieces",
+    "targetInitialBatch": 50,
+    "whyNow": "Very high density, but requires careful filtering and Greek/English pairing.",
+    "copyrightRisk": "low-medium depending edition"
+  },
+  {
+    "order": 12,
+    "sourceId": "sacred-texts-upanishads",
+    "title": "Principal Upanishads / Sacred Books of the East",
+    "category": "Mahāvākyas",
+    "mode": "manual-public-reference",
+    "strategy": "extract mahavakya-like short teachings; Sanskrit source required where possible; Spanish as working rendering",
+    "targetInitialBatch": 40,
+    "whyNow": "Dense metaphysical formulas; public-domain anchors available.",
+    "copyrightRisk": "low when using public-domain Max Müller / Sacred Texts"
+  },
+  {
+    "order": 13,
+    "sourceId": "loc-cantares-mexicanos",
+    "title": "Cantares Mexicanos",
+    "category": "Cantos",
+    "mode": "mode-a-chat-review",
+    "strategy": "OCR/manual image review; extract Nahuatl/English/Spanish only when source alignment is reliable",
+    "targetInitialBatch": 30,
+    "whyNow": "Very important, but scan/OCR complexity makes it slower.",
+    "copyrightRisk": "medium-high depending edition/translation"
+  },
+  {
+    "order": 14,
+    "sourceId": "porchia-voices-private-pdf",
+    "title": "Voces / Voices, Antonio Porchia",
+    "category": "Voces",
+    "mode": "mode-a-chat-review",
+    "strategy": "very selective aphorism extraction; original Spanish only when legible; use short excerpts and mark translation provenance",
+    "targetInitialBatch": 20,
+    "whyNow": "Excellent fit but image-only and copyrighted; should be sparse and careful.",
+    "copyrightRisk": "high"
+  },
+  {
+    "order": 15,
+    "sourceId": "zhuangzi-fraser-private-pdf",
+    "title": "Zhuangzi: Ways of Wandering the Way",
+    "category": "Daoist Chapters",
+    "mode": "mode-a-chat-review",
+    "strategy": "use for conceptual guidance and source discovery, not direct artifact extraction unless the source passage is short and independently anchored",
+    "targetInitialBatch": 10,
+    "whyNow": "Philosophically valuable but commentary-heavy and copyrighted.",
+    "copyrightRisk": "high"
+  }
+]
