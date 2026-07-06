@@ -208,5 +208,65 @@
     "license": "private-pdf-reference-copyrighted",
     "priority": "medium",
     "harvester": "mode-a-chat-review"
+  },
+  {
+    "id": "crowley-liber-al-oto",
+    "category": "Esoteric Formula",
+    "title": "Liber AL vel Legis sub figura CCXX",
+    "language": "English / Thelemic scripture",
+    "url": "https://lib.oto-usa.org/libri/liber0220.html",
+    "license": "public-web-reference-public-domain-or-thelemic-library",
+    "priority": "high",
+    "harvester": "crawl-public-web"
+  },
+  {
+    "id": "crowley-liber-al-hermetic",
+    "category": "Esoteric Formula",
+    "title": "Liber AL vel Legis, Hermetic Library witness",
+    "language": "English / Thelemic scripture",
+    "url": "https://hermetic.com/crowley/libers/lib220",
+    "license": "public-web-reference",
+    "priority": "high",
+    "harvester": "crawl-public-web"
+  },
+  {
+    "id": "crowley-liber-777-hermetic",
+    "category": "Occult Diagram",
+    "title": "Liber 777: Prolegomena Symbolica",
+    "language": "English / Hermetic Qabalah correspondences",
+    "url": "https://hermetic.com/crowley/libers/lib777",
+    "license": "public-web-reference",
+    "priority": "high",
+    "harvester": "crawl-public-web"
+  },
+  {
+    "id": "crowley-equinox-index",
+    "category": "Ritual Fragment",
+    "title": "The Equinox / A∴A∴ Libri index",
+    "language": "English / Thelemic periodical and libri index",
+    "url": "https://hermetic.com/crowley/equinox/",
+    "license": "public-web-reference",
+    "priority": "medium",
+    "harvester": "crawl-public-web"
+  },
+  {
+    "id": "austin-osman-spare-book-of-pleasure-reference",
+    "category": "Esoteric Formula",
+    "title": "Austin Osman Spare — The Book of Pleasure: source locator",
+    "language": "English / occult philosophy",
+    "url": "https://en.wikipedia.org/wiki/The_Book_of_Pleasure",
+    "license": "bibliographic-reference-awaiting-public-text",
+    "priority": "medium",
+    "harvester": "source-discovery-only"
+  },
+  {
+    "id": "chaos-magick-modern-bibliography",
+    "category": "Esoteric Formula",
+    "title": "Chaos magick modern bibliography: Carroll, Sherwin, Hine",
+    "language": "English / modern occultism",
+    "url": "https://en.wikipedia.org/wiki/Chaos_magic",
+    "license": "bibliographic-reference-modern-copyrighted",
+    "priority": "medium",
+    "harvester": "source-discovery-only"
   }
 ]
