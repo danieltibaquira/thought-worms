@@ -33,6 +33,9 @@ jobs:
       - name: Crawl public source targets
         run: npm run crawl:sources
 
+      - name: Generate review-needed source batches
+        run: npm run generate:review-batches
+
       - name: Migrate live corpus into verified store
         run: npm run migrate:live
 
@@ -52,4 +55,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Run corpus pipeline"
-          file_pattern: data/source-crawl-report.json data/artifacts.verified.json data/artifacts.promoted.json data/artifacts.candidates.json data/artifacts.rejected.json extra-worms-001.js corpus-report.md
+          file_pattern: data/source-crawl-report.json data/source-candidate-generation-report.json data/candidate-batches/*.json data/artifacts.verified.json data/artifacts.promoted.json data/artifacts.candidates.json data/artifacts.rejected.json extra-worms-001.js corpus-report.md
