@@ -80,6 +80,16 @@
     "harvester": "mode-a-chat-review"
   },
   {
+    "id": "desert-fathers-ward",
+    "category": "Desert Sayings",
+    "title": "The Sayings of the Desert Fathers: The Alphabetical Collection, translated by Benedicta Ward",
+    "language": "Greek / English",
+    "url": "https://ldysinger.com/@texts/0400_apophth/greek_alph/00a_start.htm",
+    "license": "private-pdf-reference-copyrighted-public-reference",
+    "priority": "high",
+    "harvester": "mode-a-chat-review"
+  },
+  {
     "id": "loc-cantares-mexicanos",
     "category": "Cantos",
     "title": "Cantares Mexicanos",
