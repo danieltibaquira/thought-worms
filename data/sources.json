@@ -30,6 +30,16 @@
     "harvester": "manual"
   },
   {
+    "id": "mumonkan-aitken-private-pdf",
+    "category": "Koan",
+    "title": "The Gateless Barrier: The Wu-Men Kuan (Mumonkan), translated by Robert Aitken",
+    "language": "Classical Chinese / English",
+    "url": "https://archive.org/details/gatelessbarrierw0000aitk",
+    "license": "private-pdf-reference-copyrighted",
+    "priority": "high",
+    "harvester": "mode-a-chat-review"
+  },
+  {
     "id": "ctext-daodejing",
     "category": "Daoist Chapters",
     "title": "Dao De Jing",
@@ -40,6 +50,16 @@
     "harvester": "manual"
   },
   {
+    "id": "daodejing-archangelis-private-pdf",
+    "category": "Daoist Chapters",
+    "title": "Dao De Jing: Ancient Immortal's Theory of Everything, translated/commented by Imios Archangelis",
+    "language": "Classical Chinese / English",
+    "url": "https://ctext.org/dao-de-jing",
+    "license": "private-pdf-reference-copyrighted",
+    "priority": "medium",
+    "harvester": "mode-a-chat-review"
+  },
+  {
     "id": "sefaria-psalms",
     "category": "Psalms",
     "title": "Psalms",
@@ -48,6 +68,16 @@
     "license": "reference",
     "priority": "high",
     "harvester": "manual"
+  },
+  {
+    "id": "psalms-kjv-fall-river-private-pdf",
+    "category": "Psalms",
+    "title": "The Book of Psalms, King James Version, Fall River Press edition",
+    "language": "English / Biblical Hebrew reference",
+    "url": "https://www.kingjamesbibleonline.org/Psalms-Chapter-1/",
+    "license": "private-pdf-reference-kjv-public-domain-text-edition-copyrighted",
+    "priority": "high",
+    "harvester": "mode-a-chat-review"
   },
   {
     "id": "loc-cantares-mexicanos",
@@ -108,5 +138,15 @@
     "license": "reference",
     "priority": "medium",
     "harvester": "manual"
+  },
+  {
+    "id": "hafez-saberi-private-pdf",
+    "category": "Sufi Poetry",
+    "title": "The Poems of Hafez, translated from Persian by Reza Saberi",
+    "language": "Persian / English",
+    "url": "https://www.poetryfoundation.org/poets/hafez",
+    "license": "private-pdf-reference-copyrighted",
+    "priority": "medium",
+    "harvester": "mode-a-chat-review"
   }
 ]
