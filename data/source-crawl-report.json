@@ -1,85 +1,191 @@
 {
-  "generatedAt": "2026-07-05T00:00:00.000Z",
-  "targetCount": 6,
-  "availableCount": 3,
-  "discoveryOnlyCount": 2,
+  "generatedAt": "2026-07-06T00:00:00.000Z",
+  "runMode": "assistant-web-snapshot-plus-pipeline-targets",
+  "targetCount": 20,
+  "availableCount": 10,
+  "crossCheckOrCompleteCount": 4,
+  "deferredOrDiscoveryOnlyCount": 6,
+  "notes": "Snapshot created from public web checks and the global source-crawl target manifest. The npm crawl script remains the executable crawler and may overwrite this file with richer HTTP/char-count/sample-window data.",
   "results": [
     {
+      "sourceId": "haiku-foundation",
+      "category": "Haiku",
+      "url": "https://thehaikufoundation.org/",
+      "lane": "public-web",
+      "status": "available-web-snapshot",
+      "candidateLimit": 20,
+      "expectedAcceptedRange": [12, 18]
+    },
+    {
+      "sourceId": "mumonkan-sacred-texts",
+      "category": "Koan",
+      "url": "https://sacred-texts.com/bud/zen/mumonkan.htm",
+      "lane": "complete-public-cross-check",
+      "status": "available-complete-cross-check",
+      "candidateLimit": 0,
+      "expectedAcceptedRange": [0, 0]
+    },
+    {
+      "sourceId": "ctext-daodejing",
+      "category": "Daoist Chapters",
+      "url": "https://ctext.org/dao-de-jing",
+      "lane": "complete-public-cross-check",
+      "status": "available-complete-cross-check",
+      "candidateLimit": 0,
+      "expectedAcceptedRange": [0, 0]
+    },
+    {
+      "sourceId": "sefaria-psalms",
+      "category": "Psalms",
+      "url": "https://www.sefaria.org/Psalms",
+      "lane": "public-web",
+      "status": "available-web-snapshot",
+      "candidateLimit": 60,
+      "expectedAcceptedRange": [40, 55]
+    },
+    {
+      "sourceId": "psalms-kjv-fall-river-private-pdf",
+      "category": "Psalms",
+      "url": "https://www.kingjamesbibleonline.org/Psalms-Chapter-1/",
+      "lane": "public-cross-check",
+      "status": "cross-check-only-web-open-error-in-this-session",
+      "candidateLimit": 0,
+      "expectedAcceptedRange": [0, 0]
+    },
+    {
+      "sourceId": "desert-fathers-ward",
+      "category": "Desert Sayings",
+      "url": "https://ldysinger.com/@texts/0400_apophth/greek_alph/00a_start.htm",
+      "lane": "complete-selected",
+      "status": "selected-pass-complete-web-open-error-in-this-session",
+      "candidateLimit": 0,
+      "expectedAcceptedRange": [0, 0]
+    },
+    {
+      "sourceId": "popol-wuuj-saravia-guarchaj",
+      "category": "Cantos",
+      "url": "https://archive.org/details/isbn_9789992212172",
+      "lane": "digitized-manual-review",
+      "status": "manual-digitized-expansion-needed-web-open-error-in-this-session",
+      "candidateLimit": 20,
+      "expectedAcceptedRange": [12, 18]
+    },
+    {
+      "sourceId": "loc-cantares-mexicanos",
+      "category": "Cantos",
+      "url": "https://www.loc.gov/item/2021668058/",
+      "lane": "deferred-ocr",
+      "status": "deferred-under-no-ocr-rule",
+      "candidateLimit": 0,
+      "expectedAcceptedRange": [0, 0]
+    },
+    {
+      "sourceId": "sanskrit-docs-rigveda",
+      "category": "Hymns",
+      "url": "https://sanskritdocuments.org/doc_veda/rigveda.html",
+      "lane": "public-web",
+      "status": "available-in-manifest-web-open-error-in-this-session",
+      "candidateLimit": 40,
+      "expectedAcceptedRange": [24, 35]
+    },
+    {
+      "sourceId": "sacred-texts-upanishads",
+      "category": "Mahāvākyas",
+      "url": "https://sacred-texts.com/hin/sbe15/",
+      "lane": "public-web",
+      "status": "available-web-snapshot",
+      "candidateLimit": 30,
+      "expectedAcceptedRange": [20, 28]
+    },
+    {
+      "sourceId": "masnavi-whinfield-private-pdf",
+      "category": "Sufi Poetry",
+      "url": "https://sacred-texts.com/isl/masnavi/",
+      "lane": "public-web",
+      "status": "available-in-manifest-web-open-blocked-by-tool-safety",
+      "candidateLimit": 50,
+      "expectedAcceptedRange": [30, 45]
+    },
+    {
+      "sourceId": "hafez-saberi-private-pdf",
+      "category": "Sufi Poetry",
+      "url": "https://www.poetryfoundation.org/poets/hafez",
+      "lane": "deferred-ocr",
+      "status": "deferred-under-no-ocr-rule",
+      "candidateLimit": 0,
+      "expectedAcceptedRange": [0, 0]
+    },
+    {
+      "sourceId": "greek-anthology-paton-v",
+      "category": "Epitaphs",
+      "url": "https://archive.org/details/greekanthology05pato",
+      "lane": "public-domain-digitized",
+      "status": "available-in-manifest-web-open-blocked-by-tool-safety",
+      "candidateLimit": 40,
+      "expectedAcceptedRange": [25, 35]
+    },
+    {
+      "sourceId": "japanese-death-poems-hoffmann",
+      "category": "Zen Death Poems (Jisei)",
+      "url": "https://archive.org/details/japanesedeathpoe0000unse",
+      "lane": "digitized-manual-review-copyrighted",
+      "status": "available-metadata-access-restricted",
+      "candidateLimit": 20,
+      "expectedAcceptedRange": [15, 25]
+    },
+    {
       "sourceId": "crowley-liber-al-oto",
-      "title": "Liber AL vel Legis — O.T.O. public library witness",
       "category": "Esoteric Formula",
       "url": "https://lib.oto-usa.org/libri/liber0220.html",
-      "mode": "public-html-text",
-      "status": "available",
+      "lane": "public-web",
+      "status": "available-web-snapshot",
       "candidateLimit": 36,
-      "preferredThemeHits": ["will", "love", "star", "law", "void", "light", "ritual", "formula"],
-      "safety": {
-        "storeFullText": false,
-        "maxOriginalWords": 18
-      }
+      "expectedAcceptedRange": [24, 32]
     },
     {
       "sourceId": "crowley-liber-al-hermetic",
-      "title": "Liber AL vel Legis — Hermetic Library witness",
       "category": "Esoteric Formula",
       "url": "https://hermetic.com/crowley/libers/lib220",
-      "mode": "public-html-cross-check",
-      "status": "available",
+      "lane": "public-cross-check",
+      "status": "available-web-snapshot-cross-check-only",
       "candidateLimit": 0,
-      "preferredThemeHits": ["will", "love", "law", "star", "void"],
-      "safety": {
-        "storeFullText": false
-      }
+      "expectedAcceptedRange": [0, 0]
     },
     {
       "sourceId": "crowley-liber-777-hermetic",
-      "title": "Liber 777 correspondence tables — Hermetic Library witness",
       "category": "Occult Diagram",
       "url": "https://hermetic.com/crowley/libers/lib777",
-      "mode": "public-html-table",
-      "status": "available",
+      "lane": "public-web-table",
+      "status": "available-web-snapshot",
       "candidateLimit": 24,
-      "preferredThemeHits": ["correspondence", "symbol", "number", "tree", "planet", "element", "formula"],
-      "safety": {
-        "storeFullText": false,
-        "maxOriginalWords": 24
-      }
+      "expectedAcceptedRange": [15, 22]
     },
     {
       "sourceId": "crowley-equinox-index",
-      "title": "The Equinox index / A∴A∴ libri discovery",
       "category": "Ritual Fragment",
       "url": "https://hermetic.com/crowley/equinox/",
-      "mode": "public-html-discovery",
-      "status": "needs-fetch",
-      "candidateLimit": 12,
-      "safety": {
-        "storeFullText": false
-      }
+      "lane": "public-web-discovery",
+      "status": "requires-specific-target-selection-web-open-error-in-this-session",
+      "candidateLimit": 20,
+      "expectedAcceptedRange": [10, 18]
     },
     {
       "sourceId": "austin-osman-spare-book-of-pleasure-reference",
-      "title": "The Book of Pleasure source locator",
       "category": "Esoteric Formula",
       "url": "https://en.wikipedia.org/wiki/The_Book_of_Pleasure",
-      "mode": "source-discovery-only",
-      "status": "not-fetched-discovery-only",
+      "lane": "source-discovery-only",
+      "status": "lawful-public-text-needed",
       "candidateLimit": 0,
-      "safety": {
-        "storeFullText": false
-      }
+      "expectedAcceptedRange": [0, 0]
     },
     {
       "sourceId": "chaos-magick-modern-bibliography",
-      "title": "Chaos magick bibliography locator",
       "category": "Esoteric Formula",
       "url": "https://en.wikipedia.org/wiki/Chaos_magic",
-      "mode": "source-discovery-only",
-      "status": "not-fetched-discovery-only",
+      "lane": "bibliography-only-modern-copyright",
+      "status": "conceptual-bibliography-only",
       "candidateLimit": 0,
-      "safety": {
-        "storeFullText": false
-      }
+      "expectedAcceptedRange": [0, 0]
     }
   ]
 }
