@@ -110,6 +110,16 @@
     "harvester": "manual"
   },
   {
+    "id": "popol-wuuj-saravia-guarchaj",
+    "category": "Cantos",
+    "title": "Poopol Wuuj / Popol Vuh: K'ichee'-español, Albertina Saravia and Juan Rodrigo Guarchaj",
+    "language": "K'ichee' / Spanish",
+    "url": "https://archive.org/details/isbn_9789992212172",
+    "license": "private-pdf-reference-copyrighted",
+    "priority": "high",
+    "harvester": "mode-a-chat-review"
+  },
+  {
     "id": "sanskrit-docs-rigveda",
     "category": "Hymns",
     "title": "Rigveda",
@@ -130,6 +140,16 @@
     "harvester": "manual"
   },
   {
+    "id": "upanishads-muller-private-pdf",
+    "category": "Mahāvākyas",
+    "title": "Upanishads: The Holy Spirit of Vedas, F. Max Müller translation witness",
+    "language": "Sanskrit / English",
+    "url": "https://sacred-texts.com/hin/sbe15/",
+    "license": "private-pdf-reference-public-domain-base-text",
+    "priority": "high",
+    "harvester": "mode-a-chat-review"
+  },
+  {
     "id": "poetryfoundation-rumi",
     "category": "Sufi Poetry",
     "title": "Rumi",
@@ -138,6 +158,16 @@
     "license": "reference",
     "priority": "medium",
     "harvester": "manual"
+  },
+  {
+    "id": "masnavi-whinfield-private-pdf",
+    "category": "Sufi Poetry",
+    "title": "Masnavi i Ma'navi: Teachings of Rumi, E. H. Whinfield translation",
+    "language": "Persian / English",
+    "url": "https://sacred-texts.com/isl/masnavi/",
+    "license": "public-domain-translation-private-pdf-witness",
+    "priority": "high",
+    "harvester": "mode-a-chat-review"
   },
   {
     "id": "poetryfoundation-hafez",
@@ -155,6 +185,26 @@
     "title": "The Poems of Hafez, translated from Persian by Reza Saberi",
     "language": "Persian / English",
     "url": "https://www.poetryfoundation.org/poets/hafez",
+    "license": "private-pdf-reference-copyrighted",
+    "priority": "medium",
+    "harvester": "mode-a-chat-review"
+  },
+  {
+    "id": "greek-anthology-paton-v",
+    "category": "Epitaphs",
+    "title": "The Greek Anthology, Volume V, translated by W. R. Paton",
+    "language": "Ancient Greek / English",
+    "url": "https://archive.org/details/greekanthology05pato",
+    "license": "public-domain-reference-private-pdf-witness",
+    "priority": "medium",
+    "harvester": "mode-a-chat-review"
+  },
+  {
+    "id": "japanese-death-poems-hoffmann",
+    "category": "Zen Death Poems (Jisei)",
+    "title": "Japanese Death Poems, compiled by Yoel Hoffmann",
+    "language": "Japanese / English",
+    "url": "https://archive.org/details/japanesedeathpoe0000unse",
     "license": "private-pdf-reference-copyrighted",
     "priority": "medium",
     "harvester": "mode-a-chat-review"
