@@ -1,0 +1,38 @@
+{
+  "asOf": "2026-07-06",
+  "currentVerifiedRows": 397,
+  "strictPublicInternetCrawl": {
+    "candidateCeiling": 320,
+    "expectedAcceptedLow": 200,
+    "expectedAcceptedHigh": 290,
+    "notes": "Excludes OCR-deferred sources and copyrighted modern sources without lawful public text. Includes public web and public-domain digitized witnesses."
+  },
+  "allDefinedSourcesIncludingManualDigitizedReview": {
+    "candidateCeiling": 360,
+    "expectedAcceptedLow": 227,
+    "expectedAcceptedHigh": 331,
+    "notes": "Includes sources already present as digitized PDFs that can be reviewed without OCR, such as Popol Wuuj and Japanese Death Poems."
+  },
+  "sourceEstimates": [
+    { "sourceId": "haiku-foundation", "lane": "public-web", "candidateCeiling": 20, "expectedAcceptedLow": 12, "expectedAcceptedHigh": 18, "status": "available-for-expansion" },
+    { "sourceId": "mumonkan-sacred-texts", "lane": "complete-public-cross-check", "candidateCeiling": 0, "expectedAcceptedLow": 0, "expectedAcceptedHigh": 0, "status": "already-complete" },
+    { "sourceId": "ctext-daodejing", "lane": "complete-public-cross-check", "candidateCeiling": 0, "expectedAcceptedLow": 0, "expectedAcceptedHigh": 0, "status": "already-complete" },
+    { "sourceId": "sefaria-psalms", "lane": "public-web", "candidateCeiling": 60, "expectedAcceptedLow": 40, "expectedAcceptedHigh": 55, "status": "available-for-expansion" },
+    { "sourceId": "psalms-kjv-fall-river-private-pdf", "lane": "public-cross-check", "candidateCeiling": 0, "expectedAcceptedLow": 0, "expectedAcceptedHigh": 0, "status": "cross-check-only" },
+    { "sourceId": "desert-fathers-ward", "lane": "complete-selected", "candidateCeiling": 0, "expectedAcceptedLow": 0, "expectedAcceptedHigh": 0, "status": "selected-pass-complete" },
+    { "sourceId": "popol-wuuj-saravia-guarchaj", "lane": "digitized-manual-review", "candidateCeiling": 20, "expectedAcceptedLow": 12, "expectedAcceptedHigh": 18, "status": "manual-digitized-expansion" },
+    { "sourceId": "loc-cantares-mexicanos", "lane": "deferred-ocr", "candidateCeiling": 0, "expectedAcceptedLow": 0, "expectedAcceptedHigh": 0, "status": "deferred-under-no-ocr-rule" },
+    { "sourceId": "sanskrit-docs-rigveda", "lane": "public-web", "candidateCeiling": 40, "expectedAcceptedLow": 24, "expectedAcceptedHigh": 35, "status": "available-for-expansion" },
+    { "sourceId": "sacred-texts-upanishads", "lane": "public-web", "candidateCeiling": 30, "expectedAcceptedLow": 20, "expectedAcceptedHigh": 28, "status": "available-for-expansion" },
+    { "sourceId": "masnavi-whinfield-private-pdf", "lane": "public-web", "candidateCeiling": 50, "expectedAcceptedLow": 30, "expectedAcceptedHigh": 45, "status": "available-for-expansion" },
+    { "sourceId": "hafez-saberi-private-pdf", "lane": "deferred-ocr", "candidateCeiling": 0, "expectedAcceptedLow": 0, "expectedAcceptedHigh": 0, "status": "deferred-under-no-ocr-rule" },
+    { "sourceId": "greek-anthology-paton-v", "lane": "public-domain-digitized", "candidateCeiling": 40, "expectedAcceptedLow": 25, "expectedAcceptedHigh": 35, "status": "available-for-expansion" },
+    { "sourceId": "japanese-death-poems-hoffmann", "lane": "digitized-manual-review-copyrighted", "candidateCeiling": 20, "expectedAcceptedLow": 15, "expectedAcceptedHigh": 25, "status": "manual-digitized-expansion" },
+    { "sourceId": "crowley-liber-al-oto", "lane": "public-web", "candidateCeiling": 36, "expectedAcceptedLow": 24, "expectedAcceptedHigh": 32, "status": "available-for-expansion" },
+    { "sourceId": "crowley-liber-al-hermetic", "lane": "public-cross-check", "candidateCeiling": 0, "expectedAcceptedLow": 0, "expectedAcceptedHigh": 0, "status": "cross-check-only" },
+    { "sourceId": "crowley-liber-777-hermetic", "lane": "public-web-table", "candidateCeiling": 24, "expectedAcceptedLow": 15, "expectedAcceptedHigh": 22, "status": "available-for-expansion" },
+    { "sourceId": "crowley-equinox-index", "lane": "public-web-discovery", "candidateCeiling": 20, "expectedAcceptedLow": 10, "expectedAcceptedHigh": 18, "status": "requires-specific-target-selection" },
+    { "sourceId": "austin-osman-spare-book-of-pleasure-reference", "lane": "source-discovery-only", "candidateCeiling": 0, "expectedAcceptedLow": 0, "expectedAcceptedHigh": 0, "status": "lawful-public-text-needed" },
+    { "sourceId": "chaos-magick-modern-bibliography", "lane": "bibliography-only-modern-copyright", "candidateCeiling": 0, "expectedAcceptedLow": 0, "expectedAcceptedHigh": 0, "status": "conceptual-bibliography-only" }
+  ]
+}
