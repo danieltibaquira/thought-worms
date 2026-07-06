@@ -7,6 +7,8 @@ on:
     paths:
       - 'data/artifacts.candidates.json'
       - 'data/candidate-batches/**'
+      - 'data/source-crawl-targets.json'
+      - 'data/source-capture-estimate.json'
       - 'data/sources.json'
       - 'scripts/**'
       - '.github/workflows/pipeline.yml'
@@ -28,6 +30,9 @@ jobs:
         with:
           node-version: '22'
 
+      - name: Crawl public source targets
+        run: npm run crawl:sources
+
       - name: Migrate live corpus into verified store
         run: npm run migrate:live
 
@@ -47,4 +52,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Run corpus pipeline"
-          file_pattern: data/artifacts.verified.json data/artifacts.promoted.json data/artifacts.candidates.json data/artifacts.rejected.json extra-worms-001.js corpus-report.md
+          file_pattern: data/source-crawl-report.json data/artifacts.verified.json data/artifacts.promoted.json data/artifacts.candidates.json data/artifacts.rejected.json extra-worms-001.js corpus-report.md
