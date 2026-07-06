@@ -21,11 +21,11 @@
   },
   {
     "sourceId": "daodejing-archangelis-private-pdf",
-    "status": "ready-comparative-only",
+    "status": "batch-001-queued-comparative-only",
     "coverageUnit": "chapter",
     "unitsTotal": 81,
-    "unitsReviewed": 0,
-    "candidateCount": 0,
+    "unitsReviewed": 20,
+    "candidateCount": 20,
     "verifiedCount": 0,
     "rejectedCount": 0
   },
