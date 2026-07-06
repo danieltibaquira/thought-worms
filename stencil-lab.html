@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Thought Worms — Stencil Lab</title>
+  <style>
+    :root{color-scheme:dark;--bg:#111;--fg:#f4f1ea;--muted:#aaa39a;--line:#36342f;--accent:#d8c59d;--panel:rgba(255,255,255,.045)}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;padding:clamp(.75rem,2vw,1.25rem)}
+    main{max-width:1500px;margin:0 auto;display:grid;gap:1rem}a{color:var(--accent);text-decoration:none}h1{font-family:Georgia,serif;font-size:clamp(2rem,6vw,5.5rem);line-height:.95;letter-spacing:-.06em;margin:.5rem 0;color:var(--accent);font-weight:500}.nav{display:flex;gap:1rem;flex-wrap:wrap;color:var(--muted)}
+    .grid{display:grid;gap:1rem}.panel{border:1px solid var(--line);border-radius:22px;background:var(--panel);padding:1rem}.controls{display:grid;gap:.8rem;align-content:start}.control{display:grid;gap:.35rem}.control label{color:var(--muted);font-size:.76rem;text-transform:uppercase;letter-spacing:.12em}.control input,.control select,.control textarea{width:100%;border:1px solid var(--line);border-radius:14px;background:#151515;color:var(--fg);padding:.75rem;font:inherit}.control textarea{min-height:7rem;resize:vertical;font-family:Georgia,serif;font-size:1.1rem}.actions{display:flex;gap:.6rem;flex-wrap:wrap}button{border:1px solid var(--line);background:#171717;color:var(--fg);border-radius:999px;padding:.7rem 1rem;font:inherit;cursor:pointer}button:hover{border-color:var(--accent)}
+    .stage{display:grid;place-items:center;overflow:auto}.stage svg{width:min(100%,720px);height:auto;background:#f4f1ea;border-radius:18px;box-shadow:0 22px 80px rgba(0,0,0,.45)}.analysis{font-size:.9rem;color:var(--muted);line-height:1.5}.analysis b{color:var(--fg)}
+    @media(min-width:1040px){.grid{grid-template-columns:360px 1fr}.stage svg{width:min(100%,900px)}}
+  </style>
+</head>
+<body>
+<main>
+  <div class="nav"><a href="./">Random worm</a><a href="./artifacts.html">Artifact table</a><a href="./stencil-lab.html">Stencil lab</a></div>
+  <h1>Stencil Lab</h1>
+  <section class="grid">
+    <aside class="panel controls">
+      <div class="control"><label for="artifactPick">Artifact source</label><select id="artifactPick"></select></div>
+      <div class="control"><label for="phrase">Wall phrase / central content</label><textarea id="phrase"></textarea></div>
+      <div class="control"><label for="mood">Context assembly</label><select id="mood"><option value="auto">Auto from artifact</option><option value="botanical">Botanical / breath</option><option value="water">Water / exile / flow</option><option value="cosmic">Cosmic / dawn / fire</option><option value="contemplative">Silence / attention</option><option value="urban">Bogotá / mountain / city</option></select></div>
+      <div class="control"><label for="density">Disassembly density</label><input id="density" type="range" min="1" max="5" value="4"></div>
+      <div class="control"><label for="seed">Deterministic seed</label><input id="seed" type="number" value="73" min="1" max="9999"></div>
+      <div class="actions"><button id="redraw">Redraw</button><button id="downloadSvg">Download SVG</button><button id="downloadPng">Download PNG</button></div>
+      <div class="analysis" id="analysis"></div>
+    </aside>
+    <section class="panel stage"><svg id="poster" viewBox="0 0 1000 1414" role="img" aria-label="Programmatic stencil artifact"></svg></section>
+  </section>
+</main>
+<script src="./extra-worms-001.js?v=20260705b"></script>
+<script src="./extra-worms-002.js?v=20260706a"></script>
+<script>
+const rows=(Array.isArray(window.THOUGHT_WORMS)?window.THOUGHT_WORMS:[]).filter(r=>r&&r.spanish&&r.artifact);
+const svg=document.getElementById('poster'), pick=document.getElementById('artifactPick'), phrase=document.getElementById('phrase'), mood=document.getElementById('mood'), density=document.getElementById('density'), seedEl=document.getElementById('seed'), analysis=document.getElementById('analysis');
+const NS='http://www.w3.org/2000/svg', W=1000,H=1414, INK='#111', PAPER='#f4f1ea', GOLD='#b9973e';
+function E(name,attrs={},children=[]){const el=document.createElementNS(NS,name);for(const[k,v]of Object.entries(attrs)){if(v!==undefined&&v!==null)el.setAttribute(k,v)}for(const c of children)el.appendChild(c);return el}
+function T(x,y,text,attrs={}){const el=E('text',{x,y,...attrs});el.textContent=text;return el}
+function hash(s){let h=2166136261;for(let i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619)}return h>>>0}
+function rng(seed){let t=seed>>>0;return()=>{t+=0x6D2B79F5;let x=Math.imul(t^t>>>15,1|t);x^=x+Math.imul(x^x>>>7,61|x);return((x^x>>>14)>>>0)/4294967296}}
+function splitPhrase(s){const clean=String(s||'').replace(/[“”]/g,'').replace(/\s+/g,' ').trim().toUpperCase();const words=clean.split(' ');const lines=[];let cur='';for(const w of words){if((cur+' '+w).trim().length>14&&cur){lines.push(cur);cur=w}else cur=(cur+' '+w).trim()}if(cur)lines.push(cur);return lines.slice(0,5)}
+function shortPhrase(row){return (row.spanish||row.english||row.artifact).replace(/;|:/g,'.').split(/[.!?]/)[0].trim()||row.artifact}
+function sourceMood(row){const t=[row.category,row.artifact,row.original,row.english,row.spanish].join(' ').toLowerCase();if(mood.value!=='auto')return mood.value;if(/psalm|water|river|sea|depth|agua|mar|río|rio/.test(t))return'water';if(/rigveda|sun|fire|sky|dawn|cielo|luz|fuego|cosmic/.test(t))return'cosmic';if(/haiku|flower|tree|flor|árbol|arbol|frog|pond/.test(t))return'botanical';if(/silence|stillness|attention|cell|mind|silencio|atención/.test(t))return'contemplative';return'urban'}
+function rect(x,y,w,h,fill=INK){svg.appendChild(E('rect',{x,y,width:w,height:h,fill}))}
+function line(x1,y1,x2,y2,stroke=INK,sw=7,dash=''){svg.appendChild(E('line',{x1,y1,x2,y2,stroke,'stroke-width':sw,'stroke-linecap':'round','stroke-dasharray':dash}))}
+function circle(cx,cy,r,fill='none',stroke=INK,sw=7){svg.appendChild(E('circle',{cx,cy,r,fill,stroke,'stroke-width':sw}))}
+function poly(points,fill=INK){svg.appendChild(E('polygon',{points:points.map(p=>p.join(',')).join(' '),fill}))}
+function arcPath(cx,cy,r,a1,a2,stroke=INK,sw=8){const p1=[cx+r*Math.cos(a1),cy+r*Math.sin(a1)],p2=[cx+r*Math.cos(a2),cy+r*Math.sin(a2)];svg.appendChild(E('path',{d:`M${p1[0]} ${p1[1]} A${r} ${r} 0 ${Math.abs(a2-a1)>Math.PI?1:0} 1 ${p2[0]} ${p2[1]}`,fill:'none',stroke,'stroke-width':sw,'stroke-linecap':'round'}))}
+function corner(x,y,sx,sy){rect(x,y,120*sx,18);rect(x,y,18,120*sy);rect(x+32*sx,y+32*sy,70*sx,12);rect(x+32*sx,y+32*sy,12,70*sy)}
+function connector(x1,y1,x2,y2){line(x1,y1,x2,y2,INK,4,'10 16');const a=Math.atan2(y2-y1,x2-x1);poly([[x2,y2],[x2-22*Math.cos(a-.45),y2-22*Math.sin(a-.45)],[x2-22*Math.cos(a+.45),y2-22*Math.sin(a+.45)]])}
+function flower(cx,cy,s=1){for(let i=0;i<6;i++){const a=i*Math.PI/3;svg.appendChild(E('ellipse',{cx:cx+Math.cos(a)*32*s,cy:cy+Math.sin(a)*26*s,rx:24*s,ry:56*s,fill:INK,transform:`rotate(${a*180/Math.PI+90} ${cx+Math.cos(a)*32*s} ${cy+Math.sin(a)*26*s})`}))}circle(cx,cy,18*s,PAPER,INK,6*s);for(let i=-2;i<=2;i++)line(cx+i*10*s,cy+5*s,cx+i*17*s,cy+45*s,INK,4*s)}
+function water(cx,cy,s=1){for(let i=0;i<4;i++)arcPath(cx-50*s+i*32*s,cy,35*s,Math.PI*.1,Math.PI*.9,INK,7*s);line(cx-88*s,cy+45*s,cx+88*s,cy+45*s,INK,7*s);line(cx-60*s,cy+67*s,cx+60*s,cy+67*s,INK,5*s)}
+function sun(cx,cy,s=1){svg.appendChild(E('path',{d:`M${cx-70*s} ${cy} A${70*s} ${70*s} 0 0 1 ${cx+70*s} ${cy} L${cx-70*s} ${cy}`,fill:GOLD}));for(let i=0;i<11;i++){const a=-Math.PI+i*Math.PI/10;line(cx+90*s*Math.cos(a),cy+90*s*Math.sin(a),cx+150*s*Math.cos(a),cy+150*s*Math.sin(a),INK,9*s)}}
+function mountain(cx,cy,s=1){poly([[cx-130*s,cy+70*s],[cx-45*s,cy-30*s],[cx+10*s,cy+25*s],[cx+65*s,cy-45*s],[cx+145*s,cy+70*s]]);for(let i=-4;i<=4;i++)rect(cx+i*23*s,cy+25*s,15*s,45*s,PAPER)}
+function lamp(cx,cy,s=1){circle(cx,cy,45*s,'none',INK,8*s);rect(cx-12*s,cy+45*s,24*s,80*s);line(cx-65*s,cy+135*s,cx+65*s,cy+135*s,INK,8*s);for(let i=-2;i<=2;i++)line(cx,cy-60*s,cx+i*25*s,cy-120*s,INK,5*s)}
+function bird(cx,cy,s=1,flip=1){svg.appendChild(E('path',{d:`M${cx} ${cy} C${cx+60*s*flip} ${cy-45*s} ${cx+100*s*flip} ${cy-25*s} ${cx+140*s*flip} ${cy-5*s} C${cx+80*s*flip} ${cy+5*s} ${cx+45*s*flip} ${cy+25*s} ${cx} ${cy}`,fill:INK}));circle(cx+22*s*flip,cy-8*s,4*s,INK,INK,1)}
+function orbit(cx,cy,s=1){circle(cx,cy,70*s,'none',INK,7*s);circle(cx+58*s,cy-38*s,16*s,GOLD,INK,6*s);arcPath(cx,cy,105*s,-.7,2.8,INK,4*s)}
+function contextParts(kind,rand,level){const slots=[[500,138],[160,328],[840,328],[190,1035],[810,1035],[500,1180]];const parts={botanical:[flower,water,mountain],water:[water,mountain,lamp],cosmic:[sun,orbit,mountain],contemplative:[lamp,bird,water],urban:[mountain,orbit,flower]};const chosen=parts[kind]||parts.urban;for(let i=0;i<Math.min(slots.length,level+2);i++){const [x,y]=slots[i];chosen[i%chosen.length](x,y,.72+rand()*.18)} }
+function drawText(lines){const n=lines.length, base=Math.min(154,Math.max(82,380/(Math.max(...lines.map(l=>l.length),6)/6)));const start=520-(n-1)*base*.48;lines.forEach((l,i)=>{const y=start+i*base*.86;svg.appendChild(T(500,y,l,{'text-anchor':'middle','font-family':'Georgia,Times,serif','font-size':base,'font-weight':900,'letter-spacing':'-5','fill':INK}));for(let j=-1;j<=1;j++)rect(265+j*160,y-base*.15,70,16,PAPER)}}
+function frame(rand,level){corner(60,60,1,1);corner(940,60,-1,1);corner(60,1354,1,-1);corner(940,1354,-1,-1);line(195,72,345,72,INK,10,'');line(655,72,805,72,INK,10,'');line(195,1342,405,1342,INK,10,'');line(595,1342,805,1342,INK,10,'');for(let i=0;i<level*5;i++){const side=i%2?-1:1;const x=side>0?850:150;const y=210+i*95%(920);connector(x,y,x-side*(70+rand()*70),y+(rand()-.5)*80);circle(x,y,12+rand()*12,'none',INK,5)}}
+function render(){svg.innerHTML='';const row=rows[pick.selectedIndex]||rows[0]||{};const rand=rng(Number(seedEl.value)+hash(row.artifact||''));const level=Number(density.value);rect(0,0,W,H,PAPER);frame(rand,level);contextParts(sourceMood(row),rand,level);drawText(splitPhrase(phrase.value));for(let i=0;i<level+4;i++)connector(500+(rand()-.5)*560,300+rand()*780,500+(rand()-.5)*360,360+rand()*650);svg.appendChild(T(500,1268,(row.artifact||'THOUGHT WORM').toUpperCase(),{'text-anchor':'middle','font-family':'system-ui','font-size':22,'letter-spacing':'4','fill':INK}));analyze();}
+function analyze(){const nodes=svg.querySelectorAll('*').length;const text=phrase.value.trim();const lines=splitPhrase(text).length;const longLine=Math.max(...splitPhrase(text).map(l=>l.length),0);const score=Math.max(0,100-nodes*.18-longLine*1.1-lines*4);analysis.innerHTML=`<b>Logic pass</b><br>${nodes} vector elements · ${lines} text lines · longest line ${longLine} chars<br><b>Stencil score:</b> ${Math.round(score)}/100<br>Best for Cricut after converting text to outlines in Illustrator/Inkscape. Keep bridges if cutting vinyl.`}
+function download(name,blob){const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)}
+function svgText(){return new XMLSerializer().serializeToString(svg)}
+function init(){rows.forEach((r,i)=>{const o=document.createElement('option');o.value=i;o.textContent=`${r.category} — ${r.artifact}`;pick.appendChild(o)});const first=rows.find(r=>/flor|canto|amanezca|light|luz|sky|cielo/i.test([r.artifact,r.spanish,r.english].join(' ')))||rows[0]||{};pick.selectedIndex=Math.max(0,rows.indexOf(first));phrase.value=shortPhrase(first);pick.onchange=()=>{const r=rows[pick.selectedIndex];phrase.value=shortPhrase(r);render()};[phrase,mood,density,seedEl].forEach(el=>el.addEventListener('input',render));document.getElementById('redraw').onclick=()=>{seedEl.value=Number(seedEl.value)+1;render()};document.getElementById('downloadSvg').onclick=()=>download('thought-worm-stencil.svg',new Blob([svgText()],{type:'image/svg+xml'}));document.getElementById('downloadPng').onclick=()=>{const img=new Image();img.onload=()=>{const c=document.createElement('canvas');c.width=2000;c.height=2828;const ctx=c.getContext('2d');ctx.fillStyle=PAPER;ctx.fillRect(0,0,c.width,c.height);ctx.drawImage(img,0,0,c.width,c.height);c.toBlob(b=>download('thought-worm-stencil.png',b),'image/png')};img.src='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svgText())};render()}
+init();
+</script>
+</body>
+</html>
