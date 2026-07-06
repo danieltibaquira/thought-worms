@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Thought Worms — Artifact Object</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
+  <style>
+    :root{color-scheme:dark;--bg:#111;--fg:#f4f1ea;--muted:#aaa39a;--line:#3a3936;--accent:#d8c59d;--panel:rgba(255,255,255,.035);--ink:#f4f1ea;--scale:1;--density:.5}
+    *{box-sizing:border-box}body{margin:0;min-height:100vh;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;padding:clamp(.75rem,2.5vw,1.4rem);display:grid;place-items:center}
+    main{width:min(1180px,100%);display:grid;gap:.9rem}.nav{display:flex;gap:1rem;flex-wrap:wrap;color:var(--muted);font-size:.9rem}.nav a{color:var(--accent);text-decoration:none}.object{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:32px;background:linear-gradient(135deg,rgba(255,255,255,.055),rgba(255,255,255,.018));min-height:min(900px,calc(100vh - 5rem));padding:clamp(1rem,4vw,3rem);display:grid;place-items:center}.field{position:absolute;inset:0;pointer-events:none;opacity:.95}.core{position:relative;z-index:2;width:min(860px,100%);display:grid;gap:clamp(.9rem,2.7vw,1.6rem);text-align:left}.stamp{justify-self:start;border:1px solid var(--line);border-radius:999px;padding:.35rem .75rem;color:var(--muted);font-size:.72rem;letter-spacing:.13em;text-transform:uppercase;background:rgba(0,0,0,.18)}h1{font-family:"Source Serif 4","Noto Serif",Georgia,serif;margin:0;color:var(--accent);font-size:clamp(1.45rem,calc(7vw * var(--scale)),5.7rem);line-height:.98;letter-spacing:-.055em;font-weight:650;text-wrap:balance;max-width:12.5ch}.original{font-family:"Noto Serif","Source Serif 4",Georgia,serif;color:var(--muted);line-height:1.7;font-size:clamp(.92rem,2.4vw,1.22rem);max-width:64ch}.texts{display:grid;gap:.8rem}.text-block{border-top:1px solid var(--line);padding-top:.8rem}.label{margin:0 0 .42rem;color:var(--muted);text-transform:uppercase;letter-spacing:.13em;font-size:.68rem}.text{margin:0;font-family:"Source Serif 4","Noto Serif",Georgia,serif;font-size:clamp(1.05rem,calc(3.15vw * var(--scale)),2.35rem);font-weight:560;line-height:1.14;letter-spacing:-.025em;text-wrap:balance}.parts{display:flex;gap:.45rem;flex-wrap:wrap;max-width:720px}.part{border:1px solid var(--line);border-radius:999px;padding:.34rem .64rem;color:var(--muted);font-size:.72rem;letter-spacing:.06em;background:rgba(0,0,0,.13)}footer{position:relative;z-index:2;display:flex;gap:.75rem;flex-wrap:wrap;align-items:center;justify-content:space-between;width:100%;color:var(--muted);font-size:.86rem}.source{color:var(--accent);text-decoration:none;overflow-wrap:anywhere}button{border:1px solid var(--line);background:transparent;color:var(--fg);border-radius:999px;padding:.65rem 1rem;font:inherit;cursor:pointer}button:hover{border-color:var(--accent)}.logic{color:var(--muted);font-size:.78rem;line-height:1.45}.logic b{color:var(--fg)}body[data-length="long"] h1{max-width:16ch}body[data-length="long"] .core{width:min(980px,100%)}body[data-length="long"] .texts{grid-template-columns:1fr}body[data-length="short"] .core{text-align:center;place-items:center}body[data-length="short"] .stamp{justify-self:center}body[data-length="short"] h1{max-width:9ch;font-size:clamp(2rem,9vw,7rem)}
+    @media(min-width:820px){.texts{grid-template-columns:1fr 1fr}.object{padding:clamp(2rem,5vw,4.5rem)}footer{position:absolute;left:clamp(1rem,4vw,3rem);right:clamp(1rem,4vw,3rem);bottom:clamp(1rem,3vw,2rem);width:auto}.logic{max-width:52ch}}
+    @media(max-width:640px){body{place-items:stretch center}.object{border-radius:24px;min-height:calc(100vh - 4.5rem)}h1{font-size:clamp(1.55rem,11vw,4rem)}.text{font-size:clamp(1.05rem,6vw,1.75rem)}footer{display:grid}button{width:100%}.parts{display:none}.field{opacity:.65}}
+  </style>
+</head>
+<body>
+<main>
+  <div class="nav"><a href="./">Random worm</a><a href="./artifacts.html">Artifact table</a><a href="./artifact-object.html">Artifact object</a></div>
+  <section class="object" id="object">
+    <svg class="field" id="field" viewBox="0 0 1000 1000" preserveAspectRatio="none" aria-hidden="true"></svg>
+    <article class="core">
+      <div class="stamp" id="stamp"></div>
+      <h1 id="artifact"></h1>
+      <p class="original" id="original"></p>
+      <section class="texts">
+        <div class="text-block"><p class="label">English</p><p class="text" id="english"></p></div>
+        <div class="text-block"><p class="label">Spanish</p><p class="text" id="spanish"></p></div>
+      </section>
+      <div class="parts" id="parts"></div>
+    </article>
+    <footer>
+      <div><a class="source" id="source" target="_blank" rel="noreferrer">Source</a><div class="logic" id="logic"></div></div>
+      <button id="again" type="button">Another object</button>
+    </footer>
+  </section>
+</main>
+<script src="./extra-worms-001.js?v=20260705b"></script>
+<script src="./extra-worms-002.js?v=20260706a"></script>
+<script>
+const rows=(Array.isArray(window.THOUGHT_WORMS)?window.THOUGHT_WORMS:[]).filter(r=>r&&r.artifact&&r.english&&r.spanish);
+const el={object:document.getElementById('object'),field:document.getElementById('field'),stamp:document.getElementById('stamp'),artifact:document.getElementById('artifact'),original:document.getElementById('original'),english:document.getElementById('english'),spanish:document.getElementById('spanish'),parts:document.getElementById('parts'),source:document.getElementById('source'),logic:document.getElementById('logic'),again:document.getElementById('again')};
+let cursor=Math.floor(Math.random()*Math.max(1,rows.length));
+const NS='http://www.w3.org/2000/svg';
+function E(n,a={}){const x=document.createElementNS(NS,n);for(const[k,v]of Object.entries(a))x.setAttribute(k,v);el.field.appendChild(x);return x}
+function h(s){let n=2166136261;for(const ch of String(s)){n^=ch.charCodeAt(0);n=Math.imul(n,16777619)}return n>>>0}function rnd(seed){let t=seed>>>0;return()=>{t+=0x6D2B79F5;let x=Math.imul(t^t>>>15,1|t);x^=x+Math.imul(x^x>>>7,61|x);return((x^x>>>14)>>>0)/4294967296}}
+function theme(row){const t=[row.category,row.artifact,row.original,row.english,row.spanish].join(' ').toLowerCase();if(/water|river|sea|depth|agua|río|rio|mar|profund/.test(t))return'water';if(/flower|flor|tree|leaf|root|haiku|pond|frog|canto/.test(t))return'botanical';if(/fire|sun|sky|light|dawn|cielo|luz|fuego|rigveda|star/.test(t))return'cosmic';if(/silence|still|attention|mind|cell|silencio|mente|atención/.test(t))return'contemplative';if(/death|muerte|days|time|grave|jisei/.test(t))return'time';return'urban'}
+function chips(row){const s=(row.source||row.recommendedEditionSource||'source').replace(/https?:\/\//,'').split(/[—–-]/)[0].trim();return [row.category,row.artifact.split('—')[0].trim(),theme(row),s].filter(Boolean).slice(0,5)}
+function lengthProfile(row){const chars=[row.artifact,row.original,row.english,row.spanish].join(' ').length;if(chars<210)return'short';if(chars>430)return'long';return'mid'}
+function svgLine(x1,y1,x2,y2,sw=3,dash=''){E('line',{x1,y1,x2,y2,stroke:'currentColor','stroke-width':sw,'stroke-linecap':'round','stroke-dasharray':dash})}function svgRect(x,y,w,h,op=.9){E('rect',{x,y,width:w,height:h,rx:Math.min(w,h)*.12,fill:'currentColor',opacity:op})}function svgCircle(cx,cy,r,fill='none',sw=3,op=.9){E('circle',{cx,cy,r,fill,stroke:'currentColor','stroke-width':sw,opacity:op})}function svgPath(d,sw=3,op=.9){E('path',{d,fill:'none',stroke:'currentColor','stroke-width':sw,'stroke-linecap':'round','stroke-linejoin':'round',opacity:op})}
+function baseFrame(rand,density){for(let i=0;i<4;i++){const x=i%2?870:70,y=i>1?850:70;svgRect(x,y,90,12,.8);svgRect(x,y,12,90,.8)}for(let i=0;i<Math.floor(8+density*14);i++){const side=i%2?890:110;const y=145+i*82%710;svgCircle(side,y,7+rand()*12,'none',2,.75);svgLine(side,y,500+(rand()-.5)*420,260+rand()*480,1.8,'8 12')}}
+function context(row,rand,density){const k=theme(row);if(k==='botanical'){for(let i=0;i<7;i++){const a=i*Math.PI*2/7;E('ellipse',{cx:500+Math.cos(a)*48,cy:142+Math.sin(a)*28,rx:18,ry:58,fill:'currentColor',opacity:.9,transform:`rotate(${a*180/Math.PI+90} ${500+Math.cos(a)*48} ${142+Math.sin(a)*28})`})}svgCircle(500,142,20,'rgba(17,17,17,0)',4,.8)}else if(k==='water'){for(let i=0;i<5;i++)svgPath(`M${260+i*90} 145 C${300+i*90} 105 ${340+i*90} 185 ${385+i*90} 145`,5,.85)}else if(k==='cosmic'){E('path',{d:'M410 175 A90 90 0 0 1 590 175 L410 175',fill:'currentColor',opacity:.85});for(let i=0;i<11;i++){const a=-Math.PI+i*Math.PI/10;svgLine(500+115*Math.cos(a),175+115*Math.sin(a),500+185*Math.cos(a),175+185*Math.sin(a),5)}}else if(k==='contemplative'){svgRect(420,95,160,120,.9);E('rect',{x:450,y:120,width:100,height:68,rx:8,fill:'#111',opacity:1});svgLine(500,120,500,188,4);svgCircle(500,262,18,'none',4)}else{E('polygon',{points:'220,220 350,110 455,205 600,100 790,220',fill:'currentColor',opacity:.86});for(let i=0;i<14;i++)E('rect',{x:270+i*32,y:185-rand()*55,width:18,height:75+rand()*45,fill:'#111',opacity:1})}E('path',{d:'M190 820 Q500 910 810 820',fill:'none',stroke:'currentColor','stroke-width':10,'stroke-linecap':'round','stroke-dasharray':'60 24',opacity:.75});svgLine(500,745,500,900,2,'8 12')}
+function disassemble(row){el.field.innerHTML='';const seed=h(row.artifact+row.spanish);const rand=rnd(seed);const profile=lengthProfile(row);const scale=profile==='short'?1.05:profile==='long'?.72:.88;const density=profile==='long'?.35:profile==='short'?.72:.55;document.body.dataset.length=profile;document.documentElement.style.setProperty('--scale',scale);document.documentElement.style.setProperty('--density',density);baseFrame(rand,density);context(row,rand,density);for(let i=0;i<chips(row).length;i++){const left=i%2===0;const x=left?96:904,y=330+i*78;svgRect(left?x:x-136,y-18,136,36,.82);svgLine(left?232:768,y,500+(rand()-.5)*300,420+rand()*260,1.6,'6 10')}for(let i=0;i<Math.floor(5+density*10);i++){svgRect(120+rand()*760,105+rand()*780,18+rand()*80,4+rand()*12,.55)}}
+function render(row){el.stamp.textContent=`${row.category||'artifact'} · ${theme(row)} · object view`;el.artifact.textContent=row.artifact;el.original.textContent=row.original||'';el.english.textContent=row.english;el.spanish.textContent=row.spanish;el.source.textContent=row.source||row.recommendedEditionSource||'Source';el.source.href=row.url||row.sourceUrl||'#';el.parts.innerHTML=chips(row).map(c=>`<span class="part">${c}</span>`).join('');const profile=lengthProfile(row);const concept='text intact; context disassembled';el.logic.innerHTML=`<b>${profile}</b> artifact · ${concept}`;disassemble(row)}
+function next(){cursor=(cursor+1)%rows.length;render(rows[cursor])}el.again.onclick=next;render(rows[cursor]||{category:'Artifact',artifact:'No corpus loaded',english:'',spanish:''});
+</script>
+</body>
+</html>
